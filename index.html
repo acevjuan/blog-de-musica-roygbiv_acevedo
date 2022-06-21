@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- Proyecto: blog de música con noticias, reseñas, artículos, ensayos y playlists -->
+<!-- Página principal / home -->
+<!-- Para este desafío decidí no usar etiquetas <a> para los <div> de artículos para hacer más senccilo el código. Para una página funcionando al 100 %, estos deberían llevar a la página correspondiente a ese artículo, noticia o reseña -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYGBIV | Blog de música</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado de la página principal -->
+    <header>
+        <!-- Logotipo de la página web en la parte superior de la misma -->
+        <div class="top">
+            <!-- Como logotipo estoy usando una imagen genérica de un reproductor de cassettes, que es un concepto de como quisiera que fuera -->
+            <img class="top__logotipo" src="multimedia/walkman.png">
+            <h1 class="titulo">ROYGBIV</h1>
+        </div>
+       
+        <!-- Barra de navegación para la página web -->
+        <nav class="nav-bar">
+            <ul class="nav-bar__list">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="noticias.html">NOTICIAS</a>
+                </li>
+                <li>
+                    <a href="resenas.html">RESEÑAS</a>
+                </li>
+                <li>
+                    <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
+                </li>
+                <li>
+                    <a href="playlists.html">PLAYLISTS</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contanido destacado -->
+    <section class="destacados">
+
+         <!-- Sección de contenido principal destacado. Puede ser una noticia, artículo o reseña -->
+        <div class="contenido-principal">
+
+            <div class="contenido-principal-box">
+
+                <div  class="contenido-principal__imagen">
+                    <img src="multimedia/Smile-Thom-Yorke-Jonny-Greenwood.webp" alt="Imagen Noticia # 1">
+                </div>
+
+                <div class="contenido-principal__texto">
+                    <h3 class="contenido-principal__titulo">The Smile, proyecto de Thom Yorke y Jonny Greenwood, anuncia gira por Norteamerica</h3>
+                    <p class="contenido-principal__descripcion">La gira de 19 fechas tomará lugar en otoño.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sección de noticias destacadas -->
+        <div class="noticias-destacadas">
+            
+            <h2>Noticias destacadas</h2>
+
+            <div class="noticia-destacada__item">
+            
+                <div class="noticia-destacada__item__imagen">
+                    <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
+                </div>
+            
+                <div class="noticia-destacada__item__titulo">
+                    <h3 class="noticia-destacada__titulo">Drake lanza de forma inesperada su nuevo album "Honestly, Nevermind"</h2>
+                </div>
+            
+            </div>
+
+            <div class="noticia-destacada__item">
+            
+                <div class="noticia-destacada__item__imagen">
+                    <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
+                </div>
+            
+                <div class="noticia-destacada__item__titulo">
+                    <h3 class="noticia-destacada__titulo">Gorillaz anuncia nuevo sencillo "Cracker Island"</h2>
+                </div>
+            
+            </div>
+
+            <div class="noticia-destacada__item">
+
+                <div class="noticia-destacada__item__imagen">
+                    <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
+                </div>
+
+                <div class="noticia-destacada__item__titulo">
+                    <h3 class="noticia-destacada__titulo">Flying Lotus comparte nuevos temas "The Room" y "You Don't Know"</h2>
+                </div>
+            
+            </div>
+
+            <div class="noticia-destacada__item">
+
+                <div class="noticia-destacada__item__imagen">
+                    <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
+                </div>
+
+                <div class="noticia-destacada__item__titulo">
+                    <h3 class="noticia-destacada__titulo">black midi comparte nuevo sencillo “Eat Men Eat”</h2>
+                </div>
+
+            </div>
+
+            <div class="noticia-destacada__item">
+
+                <div class="noticia-destacada__item__imagen">
+                    <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
+                </div>
+
+                <div class="noticia-destacada__item__titulo">
+                    <h3 class="noticia-destacada__titulo">Phoebe Bridgers se brillante presentación en Fallon</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sección de contenido destacado. Pueden ser noticias, artículos o reseñas. -->
+        <div class="contenido-destacado">
+
+            <div class="contenido-destacado__item contenido-destacado-item-i">
+                <img class="contenido-destacado__imagen" src="multimedia/ziggy-768x435.jpg" alt="Imagen Noticia # 1">
+                <h3>50 años de "The Rise and Fall of Ziggy Stardust and the Spiders from Mars"</h3>
+            </div>
+
+            <div class="contenido-destacado__item contenido-destacado-item-ii">
+                <img class="contenido-destacado__imagen contenido-destacado-item-ii" src="multimedia/kate-bush.webp" alt="Imagen Noticia # 1">
+                <h3>Kate Bush alcanza el primer lugar en Reino Unido con su clásico "Running Up That Hill"</h3>
+            </div>
+
+            <div class="contenido-destacado__item contenido-destacado-item-iii">
+                <img class="contenido-destacado__imagen" src="multimedia/Kendrick-Ghana-1655496145-1000x563.jpeg" alt="Imagen Noticia # 1">
+                <h3>Kendrick Lamar lanza mini documental "A Day in Accra, Ghana"</h3>
+            </div>
+
+        </div>
+
+    </section>
+   
+    <!-- Sección de artículos y ensayos destacados en la página principal -->
+    <section>
+        <h2 class="articulos-y-ensayos">ARTÍCULOS Y ENSAYOS</h2>
+        <div class="articulos-y-ensayos__contenido">
+            <div>
+                <img class="articulos-y-ensayos__imagen" src="multimedia/freddie-gibbs-1.webp" alt="Imagen Artículo # 1"></img>
+                <h3>Las 10 mejores canciones de Freddy Gibbs</h3>
+                <p>Intentamos explorar la obra de este productor de culto y esto fue lo que conseguimos.</p>
+            </div>
+            <div>
+                <img class="articulos-y-ensayos__imagen" src="multimedia/Faith-No-More-1992.webp" alt="Imagen Artículo # 2"></img>
+                <h3>Angel Dust: 30 años de la viseral herencia de Faith No More</h3>
+                <p>¿Por qué, incluso a día de hoy, los consideramos como uno de los álbumes más importantes de la historia.</p>
+            </div>
+            <div>
+                <img class="articulos-y-ensayos__imagen" src="multimedia/2022.png" alt="Imagen Artículo # 3"></img>
+                <h3>Los mejores álbumes del 2022 (hasta el momento)</h3>
+                <p>Mientras el mundo intenta volver a la normalidad, en la música no deja de haber evolución y cambios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de reseñas destacadas en página principal -->
+    <section>
+        <h2 class="resenas">RESEÑAS</h2>
+        <div class="resenas__albumes">
+            <div class="resena__album principal-resena-uno">
+                <img src="multimedia/9445220.jpg" alt="Imagen Album # 1">
+                <h3>Closure / Continuation</h3>
+                <p>Porcupine Tree</p>
+            </div>
+            <div class="resena__album principal-resena-dos">
+                <img src="multimedia/9830671.jpg" alt="Imagen Album # 2">
+                <h3>Big Time</h3>
+                <p>Angel Olsen</p>
+            </div>
+            <div class="resena__album principal-resena-tres">
+                <img src="multimedia/9900784.jpg" alt="Imagen Album # 3">
+                <h3>Cruel Country</h3>
+                <p>Wilco</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página para toda la página web -->
+    <footer class="pie-de-pagina">
+        <!-- Acceso a secciones principales en el pie de página -->
+        <div class="nav-fondo">
+            <ul>
+                <li class="apartado-fondo">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="apartado-fondo">
+                    <a href="noticias.html">NOTICIAS</a>
+                </li>
+                <li class="apartado-fondo">
+                    <a href="resenas.html">RESEÑAS</a>
+                </li>
+                <li class="apartado-fondo">
+                    <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
+                </li>
+                <li class="apartado-fondo">
+                    <a href="playlists.html">PLAYLISTS</a>
+                </li>
+                <li class="apartado-fondo">
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Acceso a redes sociales -->
+        <!-- Ajusté el tamaño de los íconos dentro de sus respectivas etiquetas img para que no se vieran tan grandes al abrir el HTML -->
+        <div class="redes-sociales">
+            <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt=""></img></a>
+            <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt=""></img></a>
+            <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt=""></img></a>
+            <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt=""></img></a>
+            <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/2111/2111685.png" alt=""></img></a>
+        </div>
+
+        <!-- Logotipo de la página con transparencia -->
+        <div class="logotipo-fondo">
+            <img class="logotipo-fondo-imagen" src="multimedia/walkman.png" alt="Logotipo">            
+        </div>
+    </footer>
+</body>
+</html>
