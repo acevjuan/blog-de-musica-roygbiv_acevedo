@@ -31,6 +31,16 @@
     margin-bottom: 15px;
 }
 
+.nav-bar__list a {
+    padding: 20px 20px;
+}
+
+.nav-bar__list a:hover {
+    color: #2B2F38;
+    background-color: white;
+    transition: all 0.2s;
+}
+
 li {
     list-style: none;
 
