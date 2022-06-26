@@ -360,6 +360,16 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 0 25px;
+
+}
+
+.destacadas__contenido__principal__texto__titulo, .destacadas__contenido__principal__texto__autor, .destacadas__contenido__principal__texto__resumen {
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.destacadas__contenido__principal__texto__titulo:hover, .destacadas__contenido__principal__texto__autor:hover, .destacadas__contenido__principal__texto__resumen:hover {
+        text-decoration-color: rgba(43, 47, 56, 1);
+        transition: 0.2s;
 }
 
 .destacadas__contenido__otras {
@@ -375,6 +385,12 @@ a {
 
 .destacadas__contenido__otras__item__titulo {
     margin: 0 25px;
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.destacadas__contenido__otras__item__titulo:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
 }
 
 .destacadas__contenido__principal__img {
@@ -400,7 +416,7 @@ a {
     color:#F8F9FA;
     text-align: center;
     margin: 40px 0;
-    padding: 5px 0; 
+    padding: 5px 0;
 }
 
 .recientes img {
@@ -432,16 +448,27 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-decoration: underline rgba(43, 47, 56, 0);
 }
 
 .recientes__contenido__item__texto__titulo {
     font-size: x-large;
+    text-decoration: underline rgba(43, 47, 56, 0);
 }
 
 .recientes__contenido__item__texto__autor {
     font-size: small;
+    text-decoration: underline rgba(43, 47, 56, 0);
 }
 
+.recientes__contenido__item__texto__resumen {
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.recientes__contenido__item__texto__titulo:hover, .recientes__contenido__item__texto__autor:hover, .recientes__contenido__item__texto__resumen:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
+}
 
 /* RESEÑAS */
 
@@ -479,6 +506,17 @@ a {
     transition: 0.2s;
 }
 
+.mas-leidas__contenido__item__titulo, .mas-leidas__contenido__item__artista, .mas-leidas__contenido__item__autor, .resenas-recientes__contenido__item__titulo, .resenas-recientes__contenido__item__artista, .resenas-recientes__contenido__item__autor {
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.mas-leidas__contenido__item__titulo:hover, .mas-leidas__contenido__item__artista:hover, .mas-leidas__contenido__item__autor:hover, .resenas-recientes__contenido__item__titulo:hover, .resenas-recientes__contenido__item__artista:hover, .resenas-recientes__contenido__item__autor:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
+}
+
+/* PLAYLISTS */
+
 .semana, .mas-escuchadas, .usuarios {
     font-family: 'Joan', serif;
 }
@@ -488,7 +526,8 @@ a {
     color:#F8F9FA;
     text-align: center;
     margin: 40px 0;
-    padding: 5px 0; 
+    padding: 5px 0;
+    text-decoration: underline rgba(43, 47, 56, 0);
 }
 
 .semana__playlist, .mas-escuchadas__playlist, .usuarios__playlist {
@@ -586,10 +625,31 @@ a {
 
 .articulo-destacado__contenido__texto__titulo {
     font-size: xx-large;
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.articulo-destacado__contenido__texto__titulo:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
+}
+
+.articulo-destacado__contenido__texto__autor {
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.articulo-destacado__contenido__texto__autor:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
 }
 
 .articulo-destacado__contenido__texto__descripcion {
     font-size: x-large;
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.articulo-destacado__contenido__texto__descripcion:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
 }
 
 .otros-articulos__primera-fila {
@@ -628,5 +688,14 @@ a {
 
 .otros-articulos__resto img:hover {
     transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.otros-articulos__primera-fila__item__titulo, .otros-articulos__primera-fila__item__autor, .otros-articulos__resto__item__titulo, .otros-articulos__resto__item__autor {
+    text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.otros-articulos__primera-fila__item__titulo:hover, .otros-articulos__primera-fila__item__autor:hover, .otros-articulos__resto__item__titulo:hover, .otros-articulos__resto__item__autor:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
     transition: 0.2s;
 }
