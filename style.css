@@ -97,6 +97,10 @@ a {
     justify-content: center;
 }
 
+.contenido-principal__texto p {
+    font-size: large;
+}
+
 .contenido-principal__titulo, .contenido-principal__descripcion {
     font-size: xx-large;
     margin: 20px;
@@ -132,6 +136,7 @@ a {
 
 .noticia-destacada__titulo {
     text-decoration: underline rgba(43, 47, 56, 0);
+    font-size: large;
 }
 
 .noticia-destacada__titulo:hover {
@@ -147,6 +152,10 @@ a {
 
 .contenido-destacado__item {
     max-width: 350px;
+}
+
+.contenido-destacado__item h3 {
+    font-size: x-large;
 }
 
 .contenido-destacado__item:hover {
@@ -234,6 +243,7 @@ a {
     text-align: center;
     margin: 50px 0;
     padding: 5px 0;
+    font-size: x-large;
 }
 
 .articulos-y-ensayos__imagen {
@@ -484,6 +494,7 @@ a {
     text-align: center;
     margin: 40px 0;
     padding: 5px 0; 
+    font-size: x-large;
 }
 
 .mas-leidas__contenido, .resenas-recientes__contenido {
