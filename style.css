@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Joan', serif;
 }
 
 .top {
@@ -41,6 +42,25 @@
     transition: all 0.2s;
 }
 
+/* Demo con Bootstrap 5.2 */
+.nav-bar__lista {
+    background-color: #2B2F38;
+    /* justify-content: space-around; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.nav-bar__lista a {
+    padding: 20px 20px;
+}
+
+.nav-bar__lista a:hover {
+    color: #2B2F38;
+    background-color: white;
+    transition: all 0.2s;
+}
+
 li {
     list-style: none;
 
@@ -63,6 +83,7 @@ a {
         font-size: large;
     }
 }
+
 .destacados {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -324,6 +345,9 @@ a {
     max-width: 200px;
 }
 
+.redes-sociales {
+    padding: 0 25px;
+}
 
 /* NOTICIAS */
 
