@@ -22,6 +22,14 @@
     height: 50px;
 }
 
+.menu-navegacion {
+    background-color: #2B2F38;
+}
+
+.menu-navegacion-boton {
+    background-color: #2B2F38;
+}
+
 /* Demo con Bootstrap 5.2 */
 .nav-bar__lista {
     background-color: #2B2F38;
