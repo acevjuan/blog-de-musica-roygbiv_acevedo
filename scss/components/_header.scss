@@ -1,0 +1,44 @@
+.top {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: $main-font;
+}
+
+.top__logotipo {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-navegacion {
+    background-color: $main-color;
+}
+
+.menu-navegacion-boton {
+    background-color: $main-color;
+}
+
+.menu-navegacion-pagina-mobile {
+    color: $secondary-color;
+}
+
+.nav-bar__lista {
+    background-color: $main-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.nav-bar__lista a {
+    padding: 7px 7px;
+}
+
+.nav-bar__lista a:hover {
+    color: $main-color;
+    background-color: $secondary-color;
+    transition: all 0.2s;
+}

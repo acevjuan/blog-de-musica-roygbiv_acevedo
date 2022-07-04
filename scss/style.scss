@@ -1,66 +1,27 @@
 /* Usar la siguiente paleta de colores: https://coolors.co/palette/2b2f38-2f343e-3b404b-474b57-585b66-676a74-757881-82848c-8d8f96-9799a0 */
 
+@import 'base/_fonts.scss';
+@import 'base/variables';
+
+@import 'components/header';
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Joan', serif;
+    font-family: $main-font;
 }
 
-.top {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo {
-    font-family: 'Joan', serif;
-}
-
-.top__logotipo {
-    width: 50px;
-    height: 50px;
-}
-
-.menu-navegacion {
-    background-color: #2B2F38;
-}
-
-.menu-navegacion-boton {
-    background-color: #2B2F38;
-}
-
-.menu-navegacion-pagina-mobile {
-    color: #F8F9FA;
-}
-
-/* Demo con Bootstrap 5.2 */
-.nav-bar__lista {
-    background-color: #2B2F38;
-    /* justify-content: space-around; */
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.nav-bar__lista a {
-    padding: 7px 7px;
-}
-
-.nav-bar__lista a:hover {
-    color: #2B2F38;
-    background-color: white;
-    transition: all 0.2s;
+body {
+    background-color: $secondary-color;
 }
 
 li {
     list-style: none;
-
 }
 
 a {
-    font-family: 'Joan', serif;
-    color:#F8F9FA;
+    font-family: $main-font;
+    color: $secondary-color;
     text-decoration: none;
 }
 
@@ -90,11 +51,11 @@ a {
 .contenido-principal__titulo, .contenido-principal__descripcion {
     font-size: xx-large;
     margin: 20px;
-    text-decoration: underline rgba(43, 47, 56, 0);
+    text-decoration: $no-hover-text;
 }
 
 .contenido-principal__titulo:hover, .contenido-principal__descripcion:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
+    text-decoration-color: $hover-text;
     transition: 0.2s;
 }
 
@@ -121,12 +82,12 @@ a {
 }
 
 .noticia-destacada__titulo {
-    text-decoration: underline rgba(43, 47, 56, 0);
+    text-decoration: $no-hover-text;
     font-size: large;
 }
 
 .noticia-destacada__titulo:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
+    text-decoration-color: $hover-text;
     transition: 0.2s;
 }
 
@@ -218,9 +179,9 @@ a {
     }
 
 .resenas, .articulos-y-ensayos {
-    background-color: #2B2F38;
-    color:#F8F9FA;
-    font-family: 'Joan', serif;
+    background-color: $main-color;
+    color: $secondary-color;
+    font-family: $main-font;
     text-align: center;
     margin: 50px 0;
     padding: 5px 0;
@@ -237,11 +198,11 @@ a {
 }
 
 .articulos-y-ensayos__contenido__item h3, .articulos-y-ensayos__contenido__item p, .resena__album h3, .resena__album p {
-    text-decoration: underline rgba(43, 47, 56, 0);
+    text-decoration: $no-hover-text;
 }
 
 .articulos-y-ensayos__contenido__item h3:hover, .articulos-y-ensayos__contenido__item p:hover, .resena__album h3:hover, .resena__album p:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
+    text-decoration-color: $hover-text;
     transition: 0.2s;
 }
 
@@ -279,19 +240,19 @@ a {
 }
 
 .pie-de-pagina {
-    background-color: #585B66;
+    background-color: $footer-color;
     padding: 10px 0;
     position: relative;
 }
 
 .nav-fondo {
-    font-family: 'Joan', serif;
+    font-family: $main-font;
     font-weight: 800;
 }
 
 .nav-fondo a:hover {
-    color: #2B2F38;
-    background-color: white;
+    color: $main-color;
+    background-color: $secondary-color;
     transition: all 0.2s;
 }
 
