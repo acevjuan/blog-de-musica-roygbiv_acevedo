@@ -76,7 +76,7 @@ a {
     }
 } */
 
-.destacados {
+/* .destacados {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -88,12 +88,12 @@ a {
     
     .contenido-principal { grid-area: 1 / 1 / 2 / 4; }
     .noticias-destacadas { grid-area: 1 / 4 / 2 / 5; }
-    .contenido-destacado { grid-area: 2 / 1 / 3 / 4; }
+    .contenido-destacado { grid-area: 2 / 1 / 3 / 4; } */
 
-.destacados img:hover {
+/* .destacados img:hover {
     transform: scale(1.02);
     transition: 0.2s;
-}
+} */
 
 .contenido-principal-box {
     display: flex;
@@ -101,6 +101,11 @@ a {
 
 .contenido-principal__imagen img {
     max-width: 500px;
+}
+
+.contenido-principal__imagen img:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
 .contenido-principal__texto {
@@ -185,28 +190,17 @@ a {
 
 @media (max-width: 950px) {
 
-    .destacadas {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 40px;
-        }
-        
-        .contenido-principal { grid-area: 1 / 1 / 2 / 2; }
-        .noticias-destacadas { grid-area: 2 / 1 / 3 / 2; }
-        .contenido-destacado { grid-area: 3 / 1 / 4 / 2; }
-
         .contenido-principal-box {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            margin-bottom: 25px;
         }
 
-        .contenido-principal img {
-            max-width: 400px;
+        .contenido-principal__imagen img {
+            max-width: 100%;
         }
 
         .contenido-principal__texto {
@@ -234,6 +228,12 @@ a {
             justify-content: center;
         }
 
+        .contenido-destacado {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
         .contenido-destacado__item {
             display: flex;
             flex-direction: column;
@@ -242,7 +242,7 @@ a {
         }
 
         .contenido-destacado__item img {
-            max-width: 400px;
+            max-width: 100%;
             padding: 25px 0;
         }
            
@@ -297,6 +297,17 @@ a {
     grid-template-rows: 1fr;
     row-gap: 20px;
     }
+
+
+@media (max-width: 950px) {
+    .resena__album img {
+        max-width: 100%;
+    }
+
+    .articulos-y-ensayos__imagen {
+        max-width: 100%;
+    }
+}
 
 .pie-de-pagina {
     background-color: #585B66;
