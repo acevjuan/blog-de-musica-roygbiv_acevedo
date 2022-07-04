@@ -1,6 +1,27 @@
 @charset "UTF-8";
-/* Usar la siguiente paleta de colores: https://coolors.co/palette/2b2f38-2f343e-3b404b-474b57-585b66-676a74-757881-82848c-8d8f96-9799a0 */
+/* Fuente utilizada: https://fonts.google.com/share?selection.family=Joan%7COpen%20Sans%7CRaleway:wght@400;800%7CRoboto:ital,wght@0,300;1,400 */
 @import url("https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap");
+/* Usar la siguiente paleta de colores: https://coolors.co/palette/2b2f38-2f343e-3b404b-474b57-585b66-676a74-757881-82848c-8d8f96-9799a0 */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Joan", sans-serif;
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: "Joan", sans-serif;
+  color: #F8F9FA;
+  text-decoration: none;
+}
+
 .top {
   margin: 15px;
   display: flex;
@@ -44,26 +65,6 @@
   color: #2B2F38;
   background-color: #F8F9FA;
   transition: all 0.2s;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Joan", sans-serif;
-}
-
-body {
-  background-color: #F8F9FA;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  font-family: "Joan", sans-serif;
-  color: #F8F9FA;
-  text-decoration: none;
 }
 
 .contenido-principal-box {
@@ -207,7 +208,7 @@ a {
     padding: 25px 0;
   }
 }
-.resenas, .articulos-y-ensayos {
+.articulos-y-ensayos {
   background-color: #2B2F38;
   color: #F8F9FA;
   font-family: "Joan", sans-serif;
@@ -226,11 +227,47 @@ a {
   transition: 0.2s;
 }
 
-.articulos-y-ensayos__contenido__item h3, .articulos-y-ensayos__contenido__item p, .resena__album h3, .resena__album p {
+.articulos-y-ensayos__contenido__item h3, .articulos-y-ensayos__contenido__item p {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
 
-.articulos-y-ensayos__contenido__item h3:hover, .articulos-y-ensayos__contenido__item p:hover, .resena__album h3:hover, .resena__album p:hover {
+.articulos-y-ensayos__contenido__item h3:hover, .articulos-y-ensayos__contenido__item p:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+
+.articulos-y-ensayos__contenido {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.articulos-y-ensayos__contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+
+@media (max-width: 950px) {
+  .articulos-y-ensayos__imagen {
+    max-width: 100%;
+  }
+}
+.resenas {
+  background-color: #2B2F38;
+  color: #F8F9FA;
+  font-family: "Joan", sans-serif;
+  text-align: center;
+  margin: 50px 0;
+  padding: 5px 0;
+  font-size: x-large;
+}
+
+.resena__album h3, .resena__album p {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+
+.resena__album h3:hover, .resena__album p:hover {
   text-decoration-color: rgb(43, 47, 56);
   transition: 0.2s;
 }
@@ -245,12 +282,12 @@ a {
   transition: 0.2s;
 }
 
-.resenas__albumes, .articulos-y-ensayos__contenido {
+.resenas__albumes {
   margin: 50px 0;
   text-align: center;
 }
 
-.resenas__albumes, .articulos-y-ensayos__contenido {
+.resenas__albumes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-template-rows: 1fr;
@@ -259,9 +296,6 @@ a {
 
 @media (max-width: 950px) {
   .resena__album img {
-    max-width: 100%;
-  }
-  .articulos-y-ensayos__imagen {
     max-width: 100%;
   }
 }

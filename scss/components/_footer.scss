@@ -1,0 +1,47 @@
+.pie-de-pagina {
+    background-color: $footer-color;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-fondo {
+    font-family: $main-font;
+    font-weight: 800;
+}
+
+.nav-fondo a:hover {
+    color: $main-color;
+    background-color: $secondary-color;
+    transition: all 0.2s;
+}
+
+.apartado-fondo {
+    padding: 5px 15px;
+}
+
+.redes-sociales {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+
+.icono-red-social {
+    width: 50px;
+    height: 50px;
+}
+
+.logotipo-fondo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.logotipo-fondo-imagen {
+    width: 100px;
+    height: auto;
+    max-width: 200px;
+}
+
+.redes-sociales {
+    padding: 0 25px;
+}
