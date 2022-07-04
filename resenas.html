@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Encabezado: Demo con Bootstrap 5.2 -->
+
     <!-- Encabezado de la página principal -->
     <header>
         <!-- Logotipo de la página web en la parte superior de la misma -->
@@ -23,63 +23,61 @@
             <h1 class="titulo">ROYGBIV</h1>
         </div>
 
-        <nav class="navbar navbar-expand-md mb-3">
+        <nav class="menu navbar navbar-expand-md mb-3">
             <div class="menu-navegacion container-fluid nav">
-              <button class="navbar-toggler menu-navegacion-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <span class="menu-navegacion-pagina-mobile d-lg-none d-md-none" aria-expanded="false">RESEÑAS</span>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mb-md-0 d-flex nav-bar__lista w-100 justify-content-around">
-                    <li class="nav-item">
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="noticias.html">NOTICIAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="resenas.html">RESEÑAS</a>
-                    </li>
-                    <li class="nav-item d-md-none d-lg-block">
-                        <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
-                    </li>
-                    <li class="nav-item d-none d-md-block d-lg-none d-sm-none">
-                        <a href="href=articulos.html">ARTÍCULOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="playlists.html">PLAYLISTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-              </div>
+                <button class="navbar-toggler menu-navegacion-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="menu-navegacion-pagina-mobile d-lg-none d-md-none" aria-expanded="false">RESEÑAS</span>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="nav-bar__lista navbar-nav me-auto mb-2 mb-lg-0 mb-md-0 d-flex w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resenas.html">RESEÑAS</a>
+                        </li>
+                        <li class="nav-item d-md-none d-lg-block">
+                            <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block d-lg-none d-sm-none">
+                            <a href="href=articulos.html">ARTÍCULOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-
+        </nav>
     </header>
 
-    <!-- Reseñas más leídas. Demo con Bootstrap 5.2 -->
     <!-- Sección de reseñas más leídas -->
     <section class="mas-leidas">
         <div class="container-fluid g-0">
             <h2 class="mas-leidas__titulo">MÁS LEÍDAS</h2>
         </div>
-        <div class="container-fluid mas-leidas__contenido w-100 justify-content-around">
+        <div class="mas-leidas__contenido container-fluid w-100 justify-content-around">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mas-leidas__contenido__item">
+                <div class="mas-leidas__contenido__item col-lg-4 col-md-6 col-sm-12">
                     <img src="multimedia/9942377.jpg" alt="Portada Album # 1">
                     <h3 class="mas-leidas__contenido__item__titulo">Mr. Morale & The Big Steppers</h3>
                     <p class="mas-leidas__contenido__item__artista">Kendrick Lamar</p>
                     <p class="mas-leidas__contenido__item__autor">Autor de la reseña</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mas-leidas__contenido__item">
+                <div class="mas-leidas__contenido__item col-lg-4 col-md-6 col-sm-12">
                     <img src="multimedia/9881847.jpg" alt="Portada Album # 2">
                     <h3 class="mas-leidas__contenido__item__titulo">A Light for Attracting Attention</h3>
                     <p class="mas-leidas__contenido__item__artista">The Smile</p>
                     <p class="mas-leidas__contenido__item__autor">Autor de la reseña</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mas-leidas__contenido__item">
+                <div class="mas-leidas__contenido__item col-lg-4 col-md-6 col-sm-12">
                     <img src="multimedia/9391518.jpg" alt="Portada Album # 3">
                     <h3 class="mas-leidas__contenido__item__titulo">Ants From Up There</h3>
                     <p class="mas-leidas__contenido__item__artista">	Black Country, New Road</p>
@@ -89,29 +87,28 @@
         </div>
     </section>
 
-    <!-- Reseñas recientes. Demo con Bootstrap 5.2 -->
     <!-- Sección de reseñas recientes -->
     <section class="resenas-recientes">
         <div class="container-fluid g-0">
             <h2 class="mas-leidas__titulo">RECIENTES</h2>
         </div>
-        <div class="container-fluid resenas-recientes__contenido w-100 justify-content-around">
+        <div class="resenas-recientes__contenido container-fluid w-100 justify-content-around">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 resenas-recientes__contenido__item">
+                <div class="resenas-recientes__contenido__item col-lg-4 col-md-6 col-sm-12">
                     <img src="multimedia/9445220.jpg" alt="Portada Album # 4">
                     <h3 class="resenas-recientes__contenido__item__titulo">Closure / Continuation</h3>
                     <p class="resenas-recientes__contenido__item__artista">Porcupine Tree</p>
                     <p class="resenas-recientes__contenido__item__autor">Autor de la reseña</p>
                 </div>
         
-                <div class="col-lg-4 col-md-6 col-sm-12 resenas-recientes__contenido__item">
+                <div class="resenas-recientes__contenido__item col-lg-4 col-md-6 col-sm-12">
                     <img src="multimedia/9830671.jpg" alt="Portada Album # 5">
                     <h3 class="resenas-recientes__contenido__item__titulo">Big Time</h3>
                     <p class="resenas-recientes__contenido__item__artista">Angel Olsen</p>
                     <p class="resenas-recientes__contenido__item__autor">Autor de la reseña</p>
                 </div>
         
-                <div class="col-lg-4 col-md-6 col-sm-12 resenas-recientes__contenido__item">
+                <div class="resenas-recientes__contenido__item col-lg-4 col-md-6 col-sm-12">
                     <img src="multimedia/9900784.jpg" alt="Portada Album #6">
                     <h3 class="resenas-recientes__contenido__item__titulo">Cruel Country</h3>
                     <p class="resenas-recientes__contenido__item__artista">Wilco</p>
@@ -121,7 +118,6 @@
         </div>
     </section>
 
-    <!-- Pie de página. Demo en Bootstrap -->
     <!-- Pie de página para toda la página web -->
     <footer class="container-fluid pie-de-pagina">
         <div class="row nav-fondo">

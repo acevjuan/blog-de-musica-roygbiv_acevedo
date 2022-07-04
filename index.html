@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    
     <!-- Encabezado de la página principal -->
     <header>
         <!-- Logotipo de la página web en la parte superior de la misma -->
@@ -25,48 +26,47 @@
             <h1 class="titulo">ROYGBIV</h1>
         </div>
 
-        <nav class="navbar navbar-expand-md mb-3">
+        <nav class="menu navbar navbar-expand-md mb-3">
             <div class="menu-navegacion container-fluid nav">
-              <button class="navbar-toggler menu-navegacion-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <span class="menu-navegacion-pagina-mobile d-lg-none d-md-none" aria-expanded="false">HOME</span>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mb-md-0 d-flex nav-bar__lista w-100 justify-content-around">
-                    <li class="nav-item">
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="noticias.html">NOTICIAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="resenas.html">RESEÑAS</a>
-                    </li>
-                    <li class="nav-item d-md-none d-lg-block">
-                        <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
-                    </li>
-                    <li class="nav-item d-none d-md-block d-lg-none d-sm-none">
-                        <a href="href=articulos.html">ARTÍCULOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="playlists.html">PLAYLISTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-              </div>
+                <button class="navbar-toggler menu-navegacion-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="menu-navegacion-pagina-mobile d-lg-none d-md-none" aria-expanded="false">HOME</span>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="nav-bar__lista navbar-nav me-auto mb-2 mb-lg-0 mb-md-0 d-flex w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resenas.html">RESEÑAS</a>
+                        </li>
+                        <li class="nav-item d-md-none d-lg-block">
+                            <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block d-lg-none d-sm-none">
+                            <a href="href=articulos.html">ARTÍCULOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
-    <!-- Destacados. Demo con Bootstrap 5.2 -->
-    <!-- Tratar de corregir el tema que no ocupa el 100 % de la pantalla por los lados. Deja un pequeño padding por los lados -->
+    <!-- Sección de contenido principal del home -->
     <section class="container-fluid w-100">
         <!-- Fila de contenido principal + noticias destacadas -->
         <div class="row mb-5">
             <!-- Contenido principal -->
-            <div class="col-lg-8 col-md-12 col-sm-12 contenido-principal-box">
+            <div class="contenido-principal-box col-lg-8 col-md-12 col-sm-12">
                 <div class="container-fluid g-0">
                     <div class="row">
                         <div class="contenido-principal__imagen col-lg-5 col-md-12">
@@ -81,9 +81,8 @@
             </div>
 
             <!-- Noticias destacada -->
-            <div class="col-lg-4 col-md-12 col-sm-12 noticias-destacadas">
+            <div class="noticias-destacadas col-lg-4 col-md-12 col-sm-12">
                 <h2>Noticias destacadas</h2>
-
                 <div class="noticia-destacada__item">
                     <div class="noticia-destacada__item__imagen">
                         <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
@@ -92,7 +91,6 @@
                         <h3 class="noticia-destacada__titulo">Drake lanza de forma inesperada su nuevo album "Honestly, Nevermind"</h2>
                     </div>
                 </div>
-
                 <div class="noticia-destacada__item">
                     <div class="noticia-destacada__item__imagen">
                         <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
@@ -101,7 +99,6 @@
                         <h3 class="noticia-destacada__titulo">Gorillaz anuncia nuevo sencillo "Cracker Island"</h2>
                     </div>
                 </div>
-     
                 <div class="noticia-destacada__item">
                     <div class="noticia-destacada__item__imagen">
                         <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
@@ -109,8 +106,7 @@
                     <div class="noticia-destacada__item__titulo">
                         <h3 class="noticia-destacada__titulo">Flying Lotus comparte nuevos temas "The Room" y "You Don't Know"</h2>
                     </div>
-                </div>
-     
+                </div>    
                 <div class="noticia-destacada__item">
                     <div class="noticia-destacada__item__imagen">
                         <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
@@ -118,8 +114,7 @@
                     <div class="noticia-destacada__item__titulo">
                         <h3 class="noticia-destacada__titulo">black midi comparte nuevo sencillo “Eat Men Eat”</h2>
                     </div>
-                </div>
-     
+                </div>    
                 <div class="noticia-destacada__item">
                     <div class="noticia-destacada__item__imagen">
                         <img class="noticia-destacada__img" src="multimedia/imagen-vacia.png" alt="Imagen Noticia # 1">
@@ -128,23 +123,20 @@
                         <h3 class="noticia-destacada__titulo">Phoebe Bridgers se brillante presentación en Fallon</h2>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <!-- Fila de contenido destacado -->
         <div class="row mb-5">
-            <div class="col-lg-8 col-md-6 col-sm-12 contenido-destacado">
+            <div class="contenido-destacado col-lg-8 col-md-6 col-sm-12">
                 <div class="contenido-destacado__item contenido-destacado-item-i">
                     <img class="contenido-destacado__imagen" src="multimedia/ziggy-768x435.jpg" alt="Imagen Noticia # 1">
                     <h3>50 años de "The Rise and Fall of Ziggy Stardust and the Spiders from Mars"</h3>
-                </div>
-     
+                </div>    
                 <div class="contenido-destacado__item contenido-destacado-item-ii">
                     <img class="contenido-destacado__imagen contenido-destacado-item-ii" src="multimedia/kate-bush.webp" alt="Imagen Noticia # 1">
                     <h3>Kate Bush alcanza el primer lugar en Reino Unido con su clásico "Running Up That Hill"</h3>
-                </div>
-     
+                </div>   
                 <div class="contenido-destacado__item contenido-destacado-item-iii">
                     <img class="contenido-destacado__imagen" src="multimedia/Kendrick-Ghana-1655496145-1000x563.jpeg" alt="Imagen Noticia # 1">
                     <h3>Kendrick Lamar lanza mini documental "A Day in Accra, Ghana"</h3>
@@ -153,7 +145,7 @@
         </div>
     </section>
    
-    <!-- Artículos y ensayos. Demo con Bootstrap 5.2 -->
+    <!-- Seccón de artículos y ensayos -->
     <section>
         <div class="container-fluid g-0">
             <h2 class="articulos-y-ensayos">ARTÍCULOS Y ENSAYOS</h2>
@@ -179,7 +171,6 @@
         </div>
     </section>
 
-    <!-- Reseñas destacadas. Demo con Bootstrap 5.2 -->
     <!-- Sección de reseñas destacadas en página principal -->
     <section>
         <div class="container-fluid g-0">
@@ -212,7 +203,6 @@
         </div>
     </section>
 
-    <!-- Pie de página. Demo en Bootstrap -->
     <!-- Pie de página para toda la página web -->
     <footer class="container-fluid w-100 pie-de-pagina">
         <div class="row nav-fondo">
