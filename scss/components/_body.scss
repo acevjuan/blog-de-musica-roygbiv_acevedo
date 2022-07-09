@@ -1,0 +1,16 @@
+body {
+    background-color: $secondary-color;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        font-family: $main-font;
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+
+

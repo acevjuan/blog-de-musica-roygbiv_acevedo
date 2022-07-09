@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROYGBIV | Blog de música</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
     
     <!-- Encabezado de la página principal -->
-    <header>
+    <header class="encabezado">
         <!-- Logotipo de la página web en la parte superior de la misma -->
         <div class="top">
             <!-- Como logotipo estoy usando una imagen genérica de un reproductor de cassettes, que es un concepto de como quisiera que fuera -->
@@ -28,11 +28,11 @@
 
         <nav class="menu navbar navbar-expand-md mb-3">
             <div class="menu-navegacion container-fluid nav">
-                <button class="navbar-toggler menu-navegacion-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="menu-navegacion-boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <span class="menu-navegacion-pagina-mobile d-lg-none d-md-none" aria-expanded="false">HOME</span>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="nav-bar-list-container collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="nav-bar__lista navbar-nav me-auto mb-2 mb-lg-0 mb-md-0 d-flex w-100 justify-content-around">
                         <li class="nav-item">
                             <a href="index.html">HOME</a>
@@ -62,7 +62,7 @@
     </header>
 
     <!-- Sección de contenido principal del home -->
-    <section class="container-fluid w-100">
+    <section class="principal container-fluid w-100">
         <!-- Fila de contenido principal + noticias destacadas -->
         <div class="row mb-5">
             <!-- Contenido principal -->
@@ -127,7 +127,7 @@
         </div>
 
         <!-- Fila de contenido destacado -->
-        <div class="row mb-5">
+        <div class="contenido-destacado-container row mb-5">
             <div class="contenido-destacado col-lg-8 col-md-6 col-sm-12">
                 <div class="contenido-destacado__item contenido-destacado-item-i">
                     <img class="contenido-destacado__imagen" src="multimedia/ziggy-768x435.jpg" alt="Imagen Noticia # 1">
@@ -146,13 +146,13 @@
     </section>
    
     <!-- Seccón de artículos y ensayos -->
-    <section>
-        <div class="container-fluid g-0">
+    <section class="seccion-articulos-y-ensayos">
+        <div class="seccion-articulos-y-ensayos__barra container-fluid g-0">
             <h2 class="articulos-y-ensayos">ARTÍCULOS Y ENSAYOS</h2>
         </div>
-        <div class="container-fluid articulos-y-ensayos__contenido">
+        <div class="articulos-y-ensayos__contenido container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-sm-12 articulos-y-ensayos__contenido__item">
+                <div class="articulos-y-ensayos__contenido__item col-lg-4 col-sm-12">
                     <img class="articulos-y-ensayos__imagen" src="multimedia/freddie-gibbs-1.webp" alt="Imagen Artículo # 1"></img>
                     <h3 >Las 10 mejores canciones de Freddy Gibbs</h3>
                     <p>Intentamos explorar la obra de este productor de culto y esto fue lo que conseguimos.</p>
@@ -172,13 +172,13 @@
     </section>
 
     <!-- Sección de reseñas destacadas en página principal -->
-    <section>
-        <div class="container-fluid g-0">
+    <section class="resenas-home">
+        <div class="resenas-home-barra container-fluid g-0">
             <h2 class="resenas">RESEÑAS</h2>
         </div>
-        <div class="container-fluid">
+        <div class="resenas-home-container container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 resenas__albumes">
+                <div class="resenas__albumes col-lg-4 col-md-6 col-sm-12">
                     <div class="resena__album">
                         <img src="multimedia/9445220.jpg" alt="Imagen Album # 1">
                         <h3>Closure / Continuation</h3>
@@ -204,8 +204,8 @@
     </section>
 
     <!-- Pie de página para toda la página web -->
-    <footer class="container-fluid w-100 pie-de-pagina">
-        <div class="row nav-fondo">
+    <footer class="pie-de-pagina container-fluid w-100">
+        <div class="nav-fondo row">
             <ul>
                 <li class="apartado-fondo">
                     <a href="index.html">HOME</a>
@@ -227,7 +227,7 @@
                 </li>
             </ul>
         </div>
-        <div class="row">
+        <div class="redes-sociales-container row">
             <div class="col-lg-10 redes-sociales">
                 <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt=""></img></a>
                 <a href=""><img class="icono-red-social" src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt=""></img></a>

@@ -1,0 +1,55 @@
+.seccion-articulos-y-ensayos {
+    .seccion-articulos-y-ensayos__barra {
+        .articulos-y-ensayos {
+            background-color: $main-color;
+            color: $secondary-color;
+            font-family: $main-font;
+            text-align: center;
+            margin: 50px 0;
+            padding: 5px 0;
+            font-size: x-large;
+        }
+    }
+
+    .articulos-y-ensayos__contenido {
+        margin: 50px 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        row-gap: 20px;
+
+        .articulos-y-ensayos__contenido__item {
+            .articulos-y-ensayos__imagen {
+                max-height: 250px;
+
+                &:hover {
+                    transform: scale(1.02);
+                    transition: 0.2s;
+                }
+
+                @media (max-width: 950px) {
+                    max-width: 100%;
+                }
+            }
+            
+            & h3 {
+                text-decoration: $no-hover-text;
+                
+                &:hover {
+                    text-decoration-color: $hover-text;
+                    transition: 0.2s;
+                }
+            }
+
+            & p {
+                text-decoration: $no-hover-text;
+                
+                &:hover {
+                    text-decoration-color: $hover-text;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
