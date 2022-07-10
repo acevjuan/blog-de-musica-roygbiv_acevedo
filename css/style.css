@@ -466,11 +466,6 @@ body a {
   transition: 0.2s;
 }
 
-.recientes__contenido__item__texto__titulo:hover, .recientes__contenido__item__texto__autor:hover, .recientes__contenido__item__texto__resumen:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
 /* RESEÑAS */
 .mas-leidas, .resenas-reciente {
   margin: 50px 0;
