@@ -1,0 +1,120 @@
+.recientes {
+    font-family: $main-font;
+
+    .recientes__titulo {
+        background-color: #2B2F38;
+        color:#F8F9FA;
+        font-size: x-large;
+        text-align: center;
+        margin: 40px 0;
+        padding: 5px 0;
+    }    
+
+    .recientes__contenido {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        .recientes__contenido__item {
+            display: flex;
+            margin: 20px 0;
+
+            .recientes__contenido__item__imagen {
+
+                img {
+                    height: 100px;
+
+                    &:hover {
+                        transform: scale(1.02);
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            .recientes__contenido__item__texto {
+                margin: 0 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-decoration: underline rgba(43, 47, 56, 0);
+
+                .recientes__contenido__item__texto__titulo {
+                    font-size: x-large;
+                    text-decoration: underline rgba(43, 47, 56, 0);
+
+                    &:hover {
+                        text-decoration-color: rgba(43, 47, 56, 1);
+                        transition: 0.2s;
+                    }
+                }
+
+                .recientes__contenido__item__texto__autor {
+                    font-size: small;
+                    text-decoration: underline rgba(43, 47, 56, 0);
+
+                    &:hover {
+                        text-decoration-color: rgba(43, 47, 56, 1);
+                        transition: 0.2s;
+                    }
+                }
+
+                .recientes__contenido__item__texto__resumen {
+                    text-decoration: underline rgba(43, 47, 56, 0);
+
+                    &:hover {
+                        text-decoration-color: rgba(43, 47, 56, 1);
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.recientes__titulo {
+
+}
+
+.recientes img {
+
+}
+
+.recientes img:hover {
+
+}
+
+.recientes__contenido {
+
+}
+
+.recientes__contenido__item {
+
+}
+
+.recientes__contenido__item__imagen img {
+
+}
+
+.recientes__contenido__item__texto {
+
+}
+
+.recientes__contenido__item__texto__titulo {
+
+}
+
+.recientes__contenido__item__texto__autor {
+
+}
+
+.recientes__contenido__item__texto__resumen {
+
+}
+
+.recientes__contenido__item__texto__titulo:hover, .recientes__contenido__item__texto__autor:hover, .recientes__contenido__item__texto__resumen:hover {
+    text-decoration-color: rgba(43, 47, 56, 1);
+    transition: 0.2s;
+}
