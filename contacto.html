@@ -6,43 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROYGBIV | CONTACTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
    <!-- Encabezado de la página principal -->
-   <header>
-        <!-- Logotipo y título de apartado de la página web en la parte superior de la misma -->
-        <div class="top">
-            <img class="top__logotipo" src="multimedia/walkman.png" alt="Logotipo">
-            <h1 class="titulo">ROYGBIV | CONTACTO</h1>
-        </div>
+   <header class="encabezado">
+    <!-- Logotipo de la página web en la parte superior de la misma -->
+    <div class="top">
+        <!-- Como logotipo estoy usando una imagen genérica de un reproductor de cassettes, que es un concepto de como quisiera que fuera -->
+        <img class="top__logotipo" src="multimedia/walkman.png">
+        <h1 class="titulo">ROYGBIV | Contacto</h1>
+    </div>
 
-        <!-- Barra de navegación para la página web -->
-        <nav class="nav-bar">
-            <ul class="nav-bar__list">
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="noticias.html">NOTICIAS</a>
-                </li>
-                <li>
-                    <a href="resenas.html">RESEÑAS</a>
-                </li>
-                <li>
-                    <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
-                </li>
-                <li>
-                    <a href="playlists.html">PLAYLISTS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="menu navbar navbar-expand-md mb-3">
+        <div class="menu-navegacion container-fluid nav">
+            <button class="menu-navegacion-boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="menu-navegacion-pagina-mobile d-lg-none d-md-none" aria-expanded="false">HOME</span>
+            <div class="nav-bar-list-container collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="nav-bar__lista navbar-nav me-auto mb-2 mb-lg-0 mb-md-0 d-flex w-100 justify-content-around">
+                    <li class="nav-item">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resenas.html">RESEÑAS</a>
+                    </li>
+                    <li class="nav-item d-md-none d-lg-block">
+                        <a href="articulos.html">ARTÍCULOS Y ENSAYOS</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block d-lg-none d-sm-none">
+                        <a href="href=articulos.html">ARTÍCULOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="playlists.html">PLAYLISTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <!-- Redes sociales, diferente al footer -->
     <section>
@@ -184,5 +196,8 @@
             <img class="logotipo-fondo-imagen" src="multimedia/walkman.png" alt="Logotipo">            
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
 </body>
 </html>
