@@ -16,56 +16,5 @@
 @import 'components/playlist-semana';
 @import 'components/playlist-mas-escuchadas';
 @import 'components/playlist-usuarios';
-
-/* CONTACTO */
-
-.contacto-redes, .contacto-escribenos {
-    font-family: 'Joan', serif;
-}
-
-.contacto-redes__titulo, .contacto-escribenos__titulo {
-    color:#2B2F38;
-    text-align: center;
-    margin: 40px 0;
-    padding: 5px 0; 
-}
-
-.contacto-redes__acceso__item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 10px 0;
-    }
-    
-    .contacto-redes__acceso__item__icono { grid-area: 1 / 1 / 2 / 2; }
-    .contacto-redes__acceso__item__nombre { grid-area: 1 / 2 / 2 / 3; } 
-
-.contacto-redes__acceso__item__icono {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 10px;
-}
-
-.contacto-redes__acceso__item__icono img:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
-}
-
-.contacto-redes__acceso__item__nombre {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.contacto-redes__acceso__item__nombre a {
-    color: black;
-}
-
-.contacto-escribenos__formulario {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px 25%;
-}
+@import 'components/contacto-redes';
+@import 'components/contacto-formulari.scss';

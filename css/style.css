@@ -729,19 +729,16 @@ body a {
   justify-content: center;
 }
 
-/* CONTACTO */
-.contacto-redes, .contacto-escribenos {
+.contacto-redes {
   font-family: "Joan", serif;
 }
-
-.contacto-redes__titulo, .contacto-escribenos__titulo {
+.contacto-redes .contacto-redes__container .contacto-redes__titulo {
   color: #2B2F38;
   text-align: center;
   margin: 40px 0;
   padding: 5px 0;
 }
-
-.contacto-redes__acceso__item {
+.contacto-redes .contacto-redes__container .contacto-redes__acceso .contacto-redes__acceso__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -749,38 +746,37 @@ body a {
   grid-row-gap: 0px;
   margin: 10px 0;
 }
-
-.contacto-redes__acceso__item__icono {
+.contacto-redes .contacto-redes__container .contacto-redes__acceso .contacto-redes__acceso__item .contacto-redes__acceso__item__icono {
   grid-area: 1/1/2/2;
-}
-
-.contacto-redes__acceso__item__nombre {
-  grid-area: 1/2/2/3;
-}
-
-.contacto-redes__acceso__item__icono {
   display: flex;
   justify-content: flex-end;
   margin: 0 10px;
 }
-
-.contacto-redes__acceso__item__icono img:hover {
+.contacto-redes .contacto-redes__container .contacto-redes__acceso .contacto-redes__acceso__item .contacto-redes__acceso__item__icono:hover {
   transform: scale(1.05);
   transition: 0.2s;
 }
-
-.contacto-redes__acceso__item__nombre {
+.contacto-redes .contacto-redes__container .contacto-redes__acceso .contacto-redes__acceso__item .contacto-redes__acceso__item__nombre {
+  grid-area: 1/2/2/3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0 10px;
 }
-
-.contacto-redes__acceso__item__nombre a {
+.contacto-redes .contacto-redes__container .contacto-redes__acceso .contacto-redes__acceso__item .contacto-redes__acceso__item__nombre a {
   color: black;
 }
 
-.contacto-escribenos__formulario {
+.contacto-escribenos {
+  font-family: "Joan", serif;
+}
+.contacto-escribenos .contacto-escribenos__titulo {
+  color: #2B2F38;
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+}
+.contacto-escribenos .contacto-escribenos__formulario {
   display: flex;
   justify-content: space-evenly;
   margin: 20px 25%;
