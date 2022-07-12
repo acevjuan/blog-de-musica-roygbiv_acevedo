@@ -11,10 +11,8 @@
 @import 'components/recientes';
 @import 'components/resenas-mas-leidas';
 @import 'components/resenas-recientes';
-
-/* RESEÑAS */
-
-
+@import 'components/articulo-destacado';
+@import 'components/otros-articulos';
 
 /* PLAYLISTS */
 
@@ -89,114 +87,4 @@
     display: flex;
     justify-content: space-evenly;
     margin: 20px 25%;
-}
-
-
-/* ARTÍCULOS Y ENSAYOS */
-
-.articulo-destacado, .otros-articulos {
-    font-family: 'Joan', serif;
-}
-
-.articulo-destacado {
-    display: flex;
-    justify-content: center;
-    margin: 45px 0;
-}
-
-.articulo-destacado__contenido {
-    display: flex;
-}
-
-.articulo-destacado__contenido__imagen img {
-    height: 250px;
-}
-
-.articulo-destacado__contenido__imagen img:hover {
-    transform: scale(1.02);
-    transition: 0.2s;
-}
-
-.articulo-destacado__contenido__texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0 25px;
-}
-
-.articulo-destacado__contenido__texto__titulo {
-    font-size: xx-large;
-    text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.articulo-destacado__contenido__texto__titulo:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
-    transition: 0.2s;
-}
-
-.articulo-destacado__contenido__texto__autor {
-    text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.articulo-destacado__contenido__texto__autor:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
-    transition: 0.2s;
-}
-
-.articulo-destacado__contenido__texto__descripcion {
-    font-size: x-large;
-    text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.articulo-destacado__contenido__texto__descripcion:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
-    transition: 0.2s;
-}
-
-.otros-articulos__primera-fila {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 50px;
-    text-align: center;
-    margin: 100px 0;
-}
-
-.otros-articulos__primera-fila img {
-    height: 200px;
-}
-
-.otros-articulos__primera-fila img:hover {
-    transform: scale(1.02);
-    transition: 0.2s;
-}
-
-.otros-articulos__resto {
-    margin: 45px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 100px;
-    text-align: center;
-    margin: 50px 0;
-}
-
-.otros-articulos__resto img {
-    height: 175px;
-}
-
-.otros-articulos__resto img:hover {
-    transform: scale(1.02);
-    transition: 0.2s;
-}
-
-.otros-articulos__primera-fila__item__titulo, .otros-articulos__primera-fila__item__autor, .otros-articulos__resto__item__titulo, .otros-articulos__resto__item__autor {
-    text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.otros-articulos__primera-fila__item__titulo:hover, .otros-articulos__primera-fila__item__autor:hover, .otros-articulos__resto__item__titulo:hover, .otros-articulos__resto__item__autor:hover {
-    text-decoration-color: rgba(43, 47, 56, 1);
-    transition: 0.2s;
 }

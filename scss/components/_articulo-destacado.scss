@@ -1,0 +1,58 @@
+.articulo-destacado {
+    font-family: 'Joan', serif;
+    display: flex;
+    justify-content: center;
+    margin: 45px 0;
+
+    .articulo-destacado__contenido {
+        display: flex;
+
+        .articulo-destacado__contenido__imagen {
+
+            img {
+                height: 250px;
+
+                &:hover {
+                    transform: scale(1.02);
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        .articulo-destacado__contenido__texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0 25px;
+            
+            .articulo-destacado__contenido__texto__titulo {
+                font-size: xx-large;
+                text-decoration: underline rgba(43, 47, 56, 0);           
+                
+                &:hover {
+                    text-decoration-color: rgba(43, 47, 56, 1);
+                    transition: 0.2s;
+                }
+          }
+          
+            .articulo-destacado__contenido__texto__autor {
+                text-decoration: underline rgba(43, 47, 56, 0);                
+                
+                &:hover {
+                    text-decoration-color: rgba(43, 47, 56, 1);
+                    transition: 0.2s;                
+                }
+            }
+          
+            .articulo-destacado__contenido__texto__descripcion {
+                font-size: x-large;
+                text-decoration: underline rgba(43, 47, 56, 0);
+
+                &:hover {
+                    text-decoration-color: rgba(43, 47, 56, 1);
+                    transition: 0.2s;
+                }
+            }  
+        }
+    }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Fuente utilizada: https://fonts.google.com/share?selection.family=Joan%7COpen%20Sans%7CRaleway:wght@400;800%7CRoboto:ital,wght@0,300;1,400 */
 @import url("https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap");
 /* Usar la siguiente paleta de colores: https://coolors.co/palette/2b2f38-2f343e-3b404b-474b57-585b66-676a74-757881-82848c-8d8f96-9799a0 */
@@ -568,7 +567,117 @@ body a {
   transition: 0.2s;
 }
 
-/* RESEÑAS */
+.articulo-destacado {
+  font-family: "Joan", serif;
+  display: flex;
+  justify-content: center;
+  margin: 45px 0;
+}
+.articulo-destacado .articulo-destacado__contenido {
+  display: flex;
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__imagen img {
+  height: 250px;
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__imagen img:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 25px;
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__titulo {
+  font-size: xx-large;
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__titulo:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__autor {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__autor:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__descripcion {
+  font-size: x-large;
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__descripcion:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+
+.otros-articulos {
+  font-family: "Joan", serif;
+}
+.otros-articulos .otros-articulos__primera-fila {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 50px;
+  text-align: center;
+  margin: 100px 0;
+}
+.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__imagen {
+  height: 200px;
+}
+.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__imagen:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__titulo {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__titulo:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__autor {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__autor:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.otros-articulos .otros-articulos__resto {
+  margin: 45px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 100px;
+  text-align: center;
+  margin: 50px 0;
+}
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__imagen {
+  height: 175px;
+}
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__imagen:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__titulo {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__titulo:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__autor {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__autor:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+
 /* PLAYLISTS */
 .semana, .mas-escuchadas, .usuarios {
   font-family: "Joan", serif;
@@ -644,114 +753,6 @@ body a {
   display: flex;
   justify-content: space-evenly;
   margin: 20px 25%;
-}
-
-/* ARTÍCULOS Y ENSAYOS */
-.articulo-destacado, .otros-articulos {
-  font-family: "Joan", serif;
-}
-
-.articulo-destacado {
-  display: flex;
-  justify-content: center;
-  margin: 45px 0;
-}
-
-.articulo-destacado__contenido {
-  display: flex;
-}
-
-.articulo-destacado__contenido__imagen img {
-  height: 250px;
-}
-
-.articulo-destacado__contenido__imagen img:hover {
-  transform: scale(1.02);
-  transition: 0.2s;
-}
-
-.articulo-destacado__contenido__texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 0 25px;
-}
-
-.articulo-destacado__contenido__texto__titulo {
-  font-size: xx-large;
-  text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.articulo-destacado__contenido__texto__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
-.articulo-destacado__contenido__texto__autor {
-  text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.articulo-destacado__contenido__texto__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
-.articulo-destacado__contenido__texto__descripcion {
-  font-size: x-large;
-  text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.articulo-destacado__contenido__texto__descripcion:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
-.otros-articulos__primera-fila {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 50px;
-  text-align: center;
-  margin: 100px 0;
-}
-
-.otros-articulos__primera-fila img {
-  height: 200px;
-}
-
-.otros-articulos__primera-fila img:hover {
-  transform: scale(1.02);
-  transition: 0.2s;
-}
-
-.otros-articulos__resto {
-  margin: 45px 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 100px;
-  text-align: center;
-  margin: 50px 0;
-}
-
-.otros-articulos__resto img {
-  height: 175px;
-}
-
-.otros-articulos__resto img:hover {
-  transform: scale(1.02);
-  transition: 0.2s;
-}
-
-.otros-articulos__primera-fila__item__titulo, .otros-articulos__primera-fila__item__autor, .otros-articulos__resto__item__titulo, .otros-articulos__resto__item__autor {
-  text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.otros-articulos__primera-fila__item__titulo:hover, .otros-articulos__primera-fila__item__autor:hover, .otros-articulos__resto__item__titulo:hover, .otros-articulos__resto__item__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 
 /*# sourceMappingURL=style.css.map */
