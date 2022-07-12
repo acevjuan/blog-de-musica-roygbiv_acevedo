@@ -678,12 +678,10 @@ body a {
   transition: 0.2s;
 }
 
-/* PLAYLISTS */
-.semana, .mas-escuchadas, .usuarios {
-  font-family: "Joan", serif;
+.semana {
+  font-family: "Joan", sans-serif;
 }
-
-.semana__titulo, .mas-escuchadas__titulo, .usuarios__titulo {
+.semana .semana__titulo {
   background-color: #2B2F38;
   color: #F8F9FA;
   text-align: center;
@@ -691,13 +689,47 @@ body a {
   padding: 5px 0;
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-
-.semana__playlist, .mas-escuchadas__playlist, .usuarios__playlist {
+.semana .semana__playlist {
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
 }
 
+.mas-escuchadas {
+  font-family: "Joan", sans-serif;
+}
+.mas-escuchadas .mas-escuchadas__titulo {
+  background-color: #2B2F38;
+  color: #F8F9FA;
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.mas-escuchadas .mas-escuchadas__playlist {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.usuarios {
+  font-family: "Joan", sans-serif;
+}
+.usuarios .usuarios__titulo {
+  background-color: #2B2F38;
+  color: #F8F9FA;
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.usuarios .usuarios__playlist {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTACTO */
 .contacto-redes, .contacto-escribenos {
   font-family: "Joan", serif;
 }
@@ -709,7 +741,6 @@ body a {
   padding: 5px 0;
 }
 
-/* CONTACTO */
 .contacto-redes__acceso__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -13,27 +13,11 @@
 @import 'components/resenas-recientes';
 @import 'components/articulo-destacado';
 @import 'components/otros-articulos';
+@import 'components/playlist-semana';
+@import 'components/playlist-mas-escuchadas';
+@import 'components/playlist-usuarios';
 
-/* PLAYLISTS */
-
-.semana, .mas-escuchadas, .usuarios {
-    font-family: 'Joan', serif;
-}
-
-.semana__titulo, .mas-escuchadas__titulo, .usuarios__titulo {
-    background-color: #2B2F38;
-    color:#F8F9FA;
-    text-align: center;
-    margin: 40px 0;
-    padding: 5px 0;
-    text-decoration: underline rgba(43, 47, 56, 0);
-}
-
-.semana__playlist, .mas-escuchadas__playlist, .usuarios__playlist {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-}
+/* CONTACTO */
 
 .contacto-redes, .contacto-escribenos {
     font-family: 'Joan', serif;
@@ -45,9 +29,6 @@
     margin: 40px 0;
     padding: 5px 0; 
 }
-
-
-/* CONTACTO */
 
 .contacto-redes__acceso__item {
     display: grid;

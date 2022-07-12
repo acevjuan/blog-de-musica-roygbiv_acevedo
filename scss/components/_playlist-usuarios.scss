@@ -1,0 +1,19 @@
+.usuarios {
+    font-family: $main-font;
+
+    .usuarios__titulo {
+        background-color: #2B2F38;
+        color:#F8F9FA;
+        text-align: center;
+        margin: 40px 0;
+        padding: 5px 0;
+        text-decoration: underline rgba(43, 47, 56, 0);
+    }
+
+    .usuarios__playlist {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+}
