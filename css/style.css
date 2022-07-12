@@ -466,14 +466,11 @@ body a {
   transition: 0.2s;
 }
 
-/* RESEÑAS */
-.mas-leidas, .resenas-reciente {
+.mas-leidas {
   margin: 50px 0;
-  /* text-align: center; */
-  font-family: "Joan", serif;
+  font-family: "Joan", sans-serif;
 }
-
-.mas-leidas__titulo, .resenas-recientes__titulo {
+.mas-leidas .mas-leidas__titulo {
   background-color: #2B2F38;
   color: #F8F9FA;
   text-align: center;
@@ -481,8 +478,7 @@ body a {
   padding: 5px 0;
   font-size: x-large;
 }
-
-.mas-leidas__contenido, .resenas-recientes__contenido {
+.mas-leidas .mas-leidas__contenido {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-template-rows: 1fr;
@@ -491,26 +487,88 @@ body a {
   text-align: center;
   margin: 50px 0;
 }
-
-.resenas-recientes__contenido__item img, .mas-leidas__contenido__item img {
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__imagen {
   max-height: 250px;
   max-width: 250px;
 }
-
-.resenas-recientes__contenido__item img:hover, .mas-leidas__contenido__item img:hover {
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__imagen:hover {
   transform: scale(1.02);
   transition: 0.2s;
 }
-
-.mas-leidas__contenido__item__titulo, .mas-leidas__contenido__item__artista, .mas-leidas__contenido__item__autor, .resenas-recientes__contenido__item__titulo, .resenas-recientes__contenido__item__artista, .resenas-recientes__contenido__item__autor {
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-
-.mas-leidas__contenido__item__titulo:hover, .mas-leidas__contenido__item__artista:hover, .mas-leidas__contenido__item__autor:hover, .resenas-recientes__contenido__item__titulo:hover, .resenas-recientes__contenido__item__artista:hover, .resenas-recientes__contenido__item__autor:hover {
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__titulo:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__artista {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__artista:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__autor {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__autor:hover {
   text-decoration-color: rgb(43, 47, 56);
   transition: 0.2s;
 }
 
+.resenas-recientes {
+  margin: 50px 0;
+  font-family: "Joan", sans-serif;
+}
+.resenas-recientes .resenas-recientes__titulo {
+  background-color: #2B2F38;
+  color: #F8F9FA;
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+  font-size: x-large;
+}
+.resenas-recientes .resenas-recientes__contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  text-align: center;
+  margin: 50px 0;
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__imagen {
+  max-height: 250px;
+  max-width: 250px;
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__imagen:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__titulo {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__titulo:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__artista {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__artista:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__autor {
+  text-decoration: underline rgba(43, 47, 56, 0);
+}
+.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__autor:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+
+/* RESEÑAS */
 /* PLAYLISTS */
 .semana, .mas-escuchadas, .usuarios {
   font-family: "Joan", serif;

@@ -1,0 +1,72 @@
+.resenas-recientes {
+    margin: 50px 0;
+    font-family: $main-font;
+
+    .resenas-recientes__titulo {
+        background-color: $main-color;
+        color:$secondary-color;
+        text-align: center;
+        margin: 40px 0;
+        padding: 5px 0; 
+        font-size: x-large;
+
+    }
+
+    .resenas-recientes__contenido {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        text-align: center;
+        margin: 50px 0;
+
+
+        .resenas-recientes__contenido__item {
+
+            .resenas-recientes__contenido__item__imagen {
+                max-height: 250px;
+                max-width: 250px;
+
+                &:hover {
+                    transform: scale(1.02);
+                    transition: 0.2s;
+
+                }
+
+            }
+
+            .resenas-recientes__contenido__item__titulo {
+                text-decoration: underline rgba(43, 47, 56, 0);
+
+                &:hover {
+                    text-decoration-color: rgba(43, 47, 56, 1);
+                    transition: 0.2s;
+
+                }
+
+            }
+
+            .resenas-recientes__contenido__item__artista {
+                text-decoration: underline rgba(43, 47, 56, 0);
+
+                &:hover {
+                    text-decoration-color: rgba(43, 47, 56, 1);
+                    transition: 0.2s;
+
+                }
+
+            }
+
+            .resenas-recientes__contenido__item__autor {
+                text-decoration: underline rgba(43, 47, 56, 0);
+
+                &:hover {
+                    text-decoration-color: rgba(43, 47, 56, 1);
+                    transition: 0.2s;
+
+                }
+            }
+        }
+    }
+}
