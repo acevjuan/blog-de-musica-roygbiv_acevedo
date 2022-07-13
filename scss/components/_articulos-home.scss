@@ -1,4 +1,6 @@
 .seccion-articulos-y-ensayos {
+    font-family: $main-font;
+
     .seccion-articulos-y-ensayos__barra {
         .articulos-y-ensayos {
             background-color: $main-color;
@@ -37,8 +39,7 @@
                 text-decoration: $no-hover-text;
                 
                 &:hover {
-                    text-decoration-color: $hover-text;
-                    transition: 0.2s;
+                    @extend %hover-text;
                 }
             }
 
@@ -46,8 +47,7 @@
                 text-decoration: $no-hover-text;
                 
                 &:hover {
-                    text-decoration-color: $hover-text;
-                    transition: 0.2s;
+                    @extend %hover-text;
                 }
             }
         }

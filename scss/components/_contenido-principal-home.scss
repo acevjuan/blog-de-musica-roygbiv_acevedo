@@ -1,4 +1,6 @@
 .principal {
+    font-family: $main-font;
+
     .contenido-principal-box {
         display: flex;
 
@@ -37,8 +39,7 @@
                 text-decoration: $no-hover-text;
 
                 &:hover {
-                    text-decoration-color: $hover-text;
-                    transition: 0.2s;
+                    @extend %hover-text;
                 }
 
                 @media (max-width: 950px) {
@@ -52,8 +53,7 @@
                 text-decoration: $no-hover-text;
 
                 &:hover {
-                    text-decoration-color: $hover-text;
-                    transition: 0.2s;
+                    @extend %hover-text;
                 }
 
                 @media (max-width: 950px) {
@@ -95,8 +95,7 @@
                     font-size: large;
 
                     &:hover {
-                        text-decoration-color: $hover-text;
-                        transition: 0.2s;
+                        @extend %hover-text;
                     }
                 }
             }
@@ -159,63 +158,3 @@
         }
     }
 }
-
-// @media (max-width: 950px) {
-
-//         .contenido-principal-box {
-//             display: flex;
-//             flex-direction: column;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//             align-items: center;
-//             margin-bottom: 25px;
-//         }
-
-//         .contenido-principal__imagen img {
-//             max-width: 100%;
-//         }
-
-//         .contenido-principal__texto {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             flex-wrap: wrap;
-//         }
-
-//         .contenido-principal__titulo {
-//             margin: 0;
-//         }
-
-//         .contenido-principal__descripcion {
-//             display: none;
-//         }
-
-//         .noticias-destacadas {
-//             margin: 20px 0;
-//         }
-
-//         .noticias-destacadas__item {
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//         }
-
-//         .contenido-destacado {
-//             display: flex;
-//             flex-direction: column;
-//             align-content: center;
-//         }
-
-//         .contenido-destacado__item {
-//             display: flex;
-//             flex-direction: column;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//         }
-
-//         .contenido-destacado__item img {
-//             max-width: 100%;
-//             padding: 25px 0;
-//         }
-           
-//     }

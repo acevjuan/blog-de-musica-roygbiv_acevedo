@@ -43,8 +43,8 @@
                     text-decoration: $no-hover-text;
 
                     &:hover {
-                        text-decoration-color: $hover-text;
-                        transition: 0.2s;
+                    @extend %hover-text;
+                    
                     }
                 }
 
@@ -53,8 +53,8 @@
                     text-decoration: $no-hover-text;
 
                     &:hover {
-                        text-decoration-color: $hover-text;
-                        transition: 0.2s;
+                    @extend %hover-text;
+                    
                     }
                 }
 
@@ -62,8 +62,8 @@
                     text-decoration: $no-hover-text;
 
                     &:hover {
-                        text-decoration-color: $hover-text;
-                        transition: 0.2s;
+                    @extend %hover-text;
+                    
                     }
                 }
             }

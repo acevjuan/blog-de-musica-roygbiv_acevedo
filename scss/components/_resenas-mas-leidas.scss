@@ -39,8 +39,8 @@
                 text-decoration: underline rgba(43, 47, 56, 0);
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
-                    transition: 0.2s;
+                    @extend %hover-text;
+                    
 
                 }
 
@@ -50,8 +50,8 @@
                 text-decoration: underline rgba(43, 47, 56, 0);
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
-                    transition: 0.2s;
+                    @extend %hover-text;
+                    
 
                 }
 
@@ -61,8 +61,8 @@
                 text-decoration: underline rgba(43, 47, 56, 0);
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
-                    transition: 0.2s;
+                    @extend %hover-text;
+                    
 
                 }
             }

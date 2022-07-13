@@ -1,6 +1,11 @@
 /* Fuente utilizada: https://fonts.google.com/share?selection.family=Joan%7COpen%20Sans%7CRaleway:wght@400;800%7CRoboto:ital,wght@0,300;1,400 */
 @import url("https://fonts.googleapis.com/css2?family=Joan&family=Open+Sans&family=Raleway:wght@400;800&family=Roboto:ital,wght@0,300;1,400&display=swap");
 /* Usar la siguiente paleta de colores: https://coolors.co/palette/2b2f38-2f343e-3b404b-474b57-585b66-676a74-757881-82848c-8d8f96-9799a0 */
+.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__autor:hover, .otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__titulo:hover, .otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__autor:hover, .otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__titulo:hover, .articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__descripcion:hover, .articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__autor:hover, .articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__titulo:hover, .resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__autor:hover, .resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__artista:hover, .resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__titulo:hover, .mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__autor:hover, .mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__artista:hover, .mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__titulo:hover, .recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__resumen:hover, .recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__autor:hover, .recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__titulo:hover, .destacadas .destacadas__contenido .destacadas__contenido__otras .destacadas__contenido__otras__item .destacadas__contenido__otras__item__titulo:hover, .destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__resumen:hover, .destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__autor:hover, .destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__titulo:hover, .seccion-articulos-y-ensayos .articulos-y-ensayos__contenido .articulos-y-ensayos__contenido__item p:hover, .seccion-articulos-y-ensayos .articulos-y-ensayos__contenido .articulos-y-ensayos__contenido__item h3:hover, .principal .noticias-destacadas .noticia-destacada__item .noticia-destacada__item__titulo .noticia-destacada__titulo:hover, .principal .contenido-principal-box .contenido-principal__texto .contenido-principal__descripcion:hover, .principal .contenido-principal-box .contenido-principal__texto .contenido-principal__titulo:hover {
+  text-decoration-color: rgb(43, 47, 56);
+  transition: 0.2s;
+}
+
 body {
   background-color: #F8F9FA;
 }
@@ -51,6 +56,9 @@ body a {
   transition: all 0.2s;
 }
 
+.principal {
+  font-family: "Joan", sans-serif;
+}
 .principal .contenido-principal-box {
   display: flex;
 }
@@ -87,10 +95,6 @@ body a {
   margin: 20px;
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.principal .contenido-principal-box .contenido-principal__texto .contenido-principal__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 @media (max-width: 950px) {
   .principal .contenido-principal-box .contenido-principal__texto .contenido-principal__titulo {
     margin: 0;
@@ -100,10 +104,6 @@ body a {
   font-size: large;
   margin: 20px;
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.principal .contenido-principal-box .contenido-principal__texto .contenido-principal__descripcion:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 @media (max-width: 950px) {
   .principal .contenido-principal-box .contenido-principal__texto .contenido-principal__descripcion {
@@ -137,10 +137,6 @@ body a {
 .principal .noticias-destacadas .noticia-destacada__item .noticia-destacada__item__titulo .noticia-destacada__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
   font-size: large;
-}
-.principal .noticias-destacadas .noticia-destacada__item .noticia-destacada__item__titulo .noticia-destacada__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 @media (max-width: 950px) {
   .principal .noticias-destacadas .noticia-destacada__item {
@@ -196,6 +192,9 @@ body a {
   }
 }
 
+.seccion-articulos-y-ensayos {
+  font-family: "Joan", sans-serif;
+}
 .seccion-articulos-y-ensayos .seccion-articulos-y-ensayos__barra .articulos-y-ensayos {
   background-color: #2B2F38;
   color: #F8F9FA;
@@ -228,18 +227,12 @@ body a {
 .seccion-articulos-y-ensayos .articulos-y-ensayos__contenido .articulos-y-ensayos__contenido__item h3 {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.seccion-articulos-y-ensayos .articulos-y-ensayos__contenido .articulos-y-ensayos__contenido__item h3:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .seccion-articulos-y-ensayos .articulos-y-ensayos__contenido .articulos-y-ensayos__contenido__item p {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.seccion-articulos-y-ensayos .articulos-y-ensayos__contenido .articulos-y-ensayos__contenido__item p:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
+.resenas-home {
+  font-family: "Joan", sans-serif;
 }
-
 .resenas-home .resenas-home-barra .resenas {
   background-color: #2B2F38;
   color: #F8F9FA;
@@ -360,23 +353,11 @@ body a {
 .destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__autor {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__resumen {
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.destacadas .destacadas__contenido .destacadas__contenido__principal .destacadas__contenido__principal__texto .destacadas__contenido__principal__texto__resumen:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 .destacadas .destacadas__contenido .destacadas__contenido__otras {
   grid-area: 1/2/3/3;
@@ -391,10 +372,6 @@ body a {
 .destacadas .destacadas__contenido .destacadas__contenido__otras .destacadas__contenido__otras__item .destacadas__contenido__otras__item__titulo {
   margin: 0 25px;
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.destacadas .destacadas__contenido .destacadas__contenido__otras .destacadas__contenido__otras__item .destacadas__contenido__otras__item__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 .destacadas .destacadas__contenido .destacadas__contenido__otras img {
   max-height: 75px;
@@ -445,26 +422,13 @@ body a {
   font-size: x-large;
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__autor {
   font-size: small;
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__resumen {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.recientes .recientes__contenido .recientes__contenido__item .recientes__contenido__item__texto .recientes__contenido__item__texto__resumen:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
 .mas-leidas {
   margin: 50px 0;
   font-family: "Joan", sans-serif;
@@ -497,25 +461,12 @@ body a {
 .mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__artista {
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__artista:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 .mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__autor {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.mas-leidas .mas-leidas__contenido .mas-leidas__contenido__item .mas-leidas__contenido__item__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
 .resenas-recientes {
   margin: 50px 0;
   font-family: "Joan", sans-serif;
@@ -548,25 +499,12 @@ body a {
 .resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__artista {
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__artista:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 .resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__autor {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.resenas-recientes .resenas-recientes__contenido .resenas-recientes__contenido__item .resenas-recientes__contenido__item__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
 .articulo-destacado {
   font-family: "Joan", sans-serif;
   display: flex;
@@ -593,26 +531,13 @@ body a {
   font-size: xx-large;
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__autor {
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 .articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__descripcion {
   font-size: x-large;
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.articulo-destacado .articulo-destacado__contenido .articulo-destacado__contenido__texto .articulo-destacado__contenido__texto__descripcion:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
 .otros-articulos {
   font-family: "Joan", sans-serif;
 }
@@ -635,16 +560,8 @@ body a {
 .otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__autor {
   text-decoration: underline rgba(43, 47, 56, 0);
-}
-.otros-articulos .otros-articulos__primera-fila .otros-articulos__primera-fila__item .otros-articulos__primera-fila__item__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
 }
 .otros-articulos .otros-articulos__resto {
   margin: 45px 0;
@@ -666,18 +583,9 @@ body a {
 .otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__titulo {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__titulo:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
 .otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__autor {
   text-decoration: underline rgba(43, 47, 56, 0);
 }
-.otros-articulos .otros-articulos__resto .otros-articulos__resto__item .otros-articulos__resto__item__autor:hover {
-  text-decoration-color: rgb(43, 47, 56);
-  transition: 0.2s;
-}
-
 .semana {
   font-family: "Joan", sans-serif;
 }

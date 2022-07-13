@@ -30,8 +30,7 @@
                 text-decoration: $no-hover-text;           
                 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
-                    transition: 0.2s;
+                    @extend %hover-text;
                 }
           }
           
@@ -39,8 +38,7 @@
                 text-decoration: $no-hover-text;                
                 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
-                    transition: 0.2s;                
+                    @extend %hover-text;               
                 }
             }
           
@@ -49,8 +47,7 @@
                 text-decoration: $no-hover-text;
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
-                    transition: 0.2s;
+                    @extend %hover-text;
                 }
             }  
         }
