@@ -17,20 +17,20 @@
 
     .menu {
         .menu-navegacion {
-            background-color: $main-color;
+            background-color: map-get($colors, main);
     
             .menu-navegacion-boton {
-                background-color: $main-color;
+                background-color: map-get($colors, main);
             }
     
             .menu-navegacion-pagina-mobile {
                 font-family: $main-font;
-                color: $secondary-color;
+                color: map-get($colors, secondary);
             }
     
             .nav-bar-list-container {
                 .nav-bar__lista {
-                    background-color: $main-color;
+                    background-color: map-get($colors, main);
                     padding-top: 5px;
                     padding-bottom: 5px;
                     margin-bottom: 15px;
@@ -39,8 +39,8 @@
                         padding: 7px 7px;
     
                         &:hover {
-                            color: $main-color;
-                            background-color: $secondary-color;
+                            color: map-get($colors, main);
+                            background-color: map-get($colors, secondary);
                             transition: all 0.2s;
                         }
                     }

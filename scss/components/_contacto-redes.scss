@@ -1,10 +1,10 @@
 .contacto-redes {
-    font-family: $hover-text;
+    font-family: $main-font;
 
     .contacto-redes__container {
 
         .contacto-redes__titulo {
-        color:$main-color;
+        color: map-get($colors, main);
         text-align: center;
         margin: 40px 0;
         padding: 5px 0;
@@ -23,7 +23,7 @@
 
                 .contacto-redes__acceso__item__icono {
                     grid-area: 1 / 1 / 2 / 2;
-                    display: flex;
+                    @include flexbox(flex, row);
                     justify-content: flex-end;
                     margin: 0 10px;
 
@@ -35,13 +35,13 @@
 
                 .contacto-redes__acceso__item__nombre {
                     grid-area: 1 / 2 / 2 / 3;
-                    display: flex;
+                    @include flexbox(flex, row);
                     justify-content: flex-start;
                     align-items: center;
                     margin: 0 10px;
 
                     a {
-                        color: $main-color;
+                        color: map-get($colors, main);
                     }
                 }
             }

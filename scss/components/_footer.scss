@@ -1,5 +1,5 @@
 .pie-de-pagina {
-    background-color: $footer-color;
+    background-color: map-get($colors, footer);
     padding: 10px 0;
     position: relative;
 
@@ -8,8 +8,8 @@
         font-weight: 800;
 
         & a:hover {
-            color: $main-color;
-            background-color: $secondary-color;
+            color: map-get($colors, main);
+            background-color: map-get($colors, secondary);
             transition: all 0.2s;
         }
 

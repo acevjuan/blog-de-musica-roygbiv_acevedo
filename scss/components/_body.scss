@@ -1,5 +1,5 @@
 body {
-    background-color: $secondary-color;
+    background-color: map-get($colors, secondary);
 
     li {
         list-style: none;
@@ -7,7 +7,7 @@ body {
 
     a {
         font-family: $main-font;
-        color: $secondary-color;
+        color: map-get($colors, secondary);
         text-decoration: none;
     }
 }

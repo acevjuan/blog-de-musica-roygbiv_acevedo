@@ -1,6 +1,8 @@
 @import 'base/_fonts.scss';
 @import 'base/variables';
+@import 'base/mapas';
 @import 'base/extends';
+@import 'base/mixins';
 
 @import 'components/body';
 @import 'components/header';

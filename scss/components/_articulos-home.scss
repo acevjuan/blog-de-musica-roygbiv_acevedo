@@ -3,8 +3,8 @@
 
     .seccion-articulos-y-ensayos__barra {
         .articulos-y-ensayos {
-            background-color: $main-color;
-            color: $secondary-color;
+            background-color: map-get($colors, main);
+            color: map-get($colors, secondary);
             font-family: $main-font;
             text-align: center;
             margin: 50px 0;

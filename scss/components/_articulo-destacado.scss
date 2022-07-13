@@ -1,6 +1,6 @@
 .articulo-destacado {
     font-family: $main-font;
-    display: flex;
+    @include flexbox(flex, row);
     justify-content: center;
     margin: 45px 0;
 
@@ -20,8 +20,7 @@
         }
 
         .articulo-destacado__contenido__texto {
-            display: flex;
-            flex-direction: column;
+            @include flexbox(flex, column);
             justify-content: space-evenly;
             margin: 0 25px;
             

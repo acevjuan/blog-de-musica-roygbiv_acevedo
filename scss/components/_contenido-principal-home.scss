@@ -18,8 +18,7 @@
         }
 
         .contenido-principal__texto {
-            display: flex;
-            flex-direction: column;
+            @include flexbox(flex, column);
             justify-content: center;
 
             & p {
@@ -27,8 +26,7 @@
             }
 
             @media (max-width: 950px) {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(flex, column);
                 justify-content: center;
                 flex-wrap: wrap;
             }
@@ -63,8 +61,7 @@
         }
 
         @media (max-width: 950px) {
-            display: flex;
-            flex-direction: column;
+            @include flexbox(flex, column);
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -73,14 +70,14 @@
     }
 
     .noticias-destacadas {
-        display: flex;
+        @include flexbox(flex, row);
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
         align-content: center;
         
         .noticia-destacada__item {
-            display: flex;
+            @include flexbox(flex, row);
 
             .noticia-destacada__item__imagen {
                 .noticia-destacada__img {
@@ -101,7 +98,7 @@
             }
 
             @media (max-width: 950px) {
-                display: flex;
+                @include flexbox(flex, row);
                 flex-wrap: wrap;
             }
         }
@@ -113,13 +110,12 @@
 
     .contenido-destacado-container {
         .contenido-destacado {
-            display: flex;
+            @include flexbox(flex, row);
             flex-wrap: wrap;
             justify-content: space-between;
 
             @media (max-width: 950px) {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(flex, column);
                 align-content: center;
             }
 
@@ -149,8 +145,7 @@
                 }
 
                 @media (max-width: 950px) {
-                    display: flex;
-                    flex-direction: column;
+                    @include flexbox(flex, column);
                     flex-wrap: wrap;
                     justify-content: center;
                 }

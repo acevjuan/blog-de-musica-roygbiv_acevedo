@@ -1,15 +1,15 @@
 .contacto-escribenos {
-    font-family: 'Joan', serif;
+    font-family: $main-font;
 
     .contacto-escribenos__titulo {
-        color:#2B2F38;
+        color: map-get($colors, main);
         text-align: center;
         margin: 40px 0;
         padding: 5px 0; 
     }
 
     .contacto-escribenos__formulario {
-        display: flex;
+        @include flexbox(flex, row);
         justify-content: space-evenly;
         margin: 20px 25%;       
     }

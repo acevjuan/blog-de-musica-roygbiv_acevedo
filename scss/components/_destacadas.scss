@@ -2,8 +2,8 @@
 font-family: $main-font;
 
     .destacadas__titulo {
-        background-color: $main-color;
-        color: $secondary-color;
+        background-color: map-get($colors, main);
+        color: map-get($colors, secondary);
         font-size: x-large;
         text-align: center;
         margin: 40px 0;
@@ -19,7 +19,7 @@ font-family: $main-font;
 
         .destacadas__contenido__principal {
             grid-area: 1 / 1 / 2 / 2;
-            display: flex;
+            @include flexbox(flex, row);
 
 
             .destacadas__contenido__principal__img {
@@ -32,8 +32,7 @@ font-family: $main-font;
             }
 
             .destacadas__contenido__principal__texto {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(flex, column);
                 justify-content: space-evenly;
                 margin: 0 25px;
 
@@ -68,8 +67,7 @@ font-family: $main-font;
 
         .destacadas__contenido__otras {
             grid-area: 1 / 2 / 3 / 3;
-            display: flex;
-            flex-direction: column;
+            @include flexbox(flex, column);
             justify-content: space-between;
 
             .destacadas__contenido__otras__item {

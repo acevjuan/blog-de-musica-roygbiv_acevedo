@@ -2,8 +2,8 @@
     font-family: $main-font;
 
     .recientes__titulo {
-        background-color: $main-color;
-        color: $secondary-color;
+        background-color: map-get($colors, main);
+        color: map-get($colors, secondary);
         font-size: x-large;
         text-align: center;
         margin: 40px 0;
@@ -33,8 +33,7 @@
 
             .recientes__contenido__item__texto {
                 margin: 0 20px;
-                display: flex;
-                flex-direction: column;
+                @include flexbox(flex, column);
                 justify-content: center;
                 text-decoration: $no-hover-text;
 
