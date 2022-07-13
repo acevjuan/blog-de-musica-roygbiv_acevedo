@@ -2,12 +2,11 @@
     font-family: $main-font;
 
     .mas-escuchadas__titulo {
-        background-color: #2B2F38;
-        color:#F8F9FA;
+        background-color: $main-color;
+        color: $secondary-color;
         text-align: center;
         margin: 40px 0;
         padding: 5px 0;
-        text-decoration: underline rgba(43, 47, 56, 0);
     }
 
     .mas-escuchadas__playlist {

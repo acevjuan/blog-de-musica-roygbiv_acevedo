@@ -568,7 +568,7 @@ body a {
 }
 
 .articulo-destacado {
-  font-family: "Joan", serif;
+  font-family: "Joan", sans-serif;
   display: flex;
   justify-content: center;
   margin: 45px 0;
@@ -614,7 +614,7 @@ body a {
 }
 
 .otros-articulos {
-  font-family: "Joan", serif;
+  font-family: "Joan", sans-serif;
 }
 .otros-articulos .otros-articulos__primera-fila {
   display: grid;
@@ -687,7 +687,6 @@ body a {
   text-align: center;
   margin: 40px 0;
   padding: 5px 0;
-  text-decoration: underline rgba(43, 47, 56, 0);
 }
 .semana .semana__playlist {
   margin-bottom: 40px;
@@ -704,7 +703,6 @@ body a {
   text-align: center;
   margin: 40px 0;
   padding: 5px 0;
-  text-decoration: underline rgba(43, 47, 56, 0);
 }
 .mas-escuchadas .mas-escuchadas__playlist {
   margin-bottom: 40px;
@@ -721,7 +719,6 @@ body a {
   text-align: center;
   margin: 40px 0;
   padding: 5px 0;
-  text-decoration: underline rgba(43, 47, 56, 0);
 }
 .usuarios .usuarios__playlist {
   margin-bottom: 40px;
@@ -730,7 +727,7 @@ body a {
 }
 
 .contacto-redes {
-  font-family: "Joan", serif;
+  font-family: rgb(43, 47, 56);
 }
 .contacto-redes .contacto-redes__container .contacto-redes__titulo {
   color: #2B2F38;
@@ -764,7 +761,7 @@ body a {
   margin: 0 10px;
 }
 .contacto-redes .contacto-redes__container .contacto-redes__acceso .contacto-redes__acceso__item .contacto-redes__acceso__item__nombre a {
-  color: black;
+  color: #2B2F38;
 }
 
 .contacto-escribenos {

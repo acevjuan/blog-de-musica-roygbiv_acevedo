@@ -1,5 +1,5 @@
 .articulo-destacado {
-    font-family: 'Joan', serif;
+    font-family: $main-font;
     display: flex;
     justify-content: center;
     margin: 45px 0;
@@ -27,7 +27,7 @@
             
             .articulo-destacado__contenido__texto__titulo {
                 font-size: xx-large;
-                text-decoration: underline rgba(43, 47, 56, 0);           
+                text-decoration: $no-hover-text;           
                 
                 &:hover {
                     text-decoration-color: rgba(43, 47, 56, 1);
@@ -36,7 +36,7 @@
           }
           
             .articulo-destacado__contenido__texto__autor {
-                text-decoration: underline rgba(43, 47, 56, 0);                
+                text-decoration: $no-hover-text;                
                 
                 &:hover {
                     text-decoration-color: rgba(43, 47, 56, 1);
@@ -46,7 +46,7 @@
           
             .articulo-destacado__contenido__texto__descripcion {
                 font-size: x-large;
-                text-decoration: underline rgba(43, 47, 56, 0);
+                text-decoration: $no-hover-text;
 
                 &:hover {
                     text-decoration-color: rgba(43, 47, 56, 1);

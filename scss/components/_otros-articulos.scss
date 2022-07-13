@@ -1,5 +1,5 @@
 .otros-articulos {
-    font-family: 'Joan', serif;
+    font-family: $main-font;
 
     .otros-articulos__primera-fila {
         display: grid;
@@ -22,19 +22,19 @@
             }
 
             .otros-articulos__primera-fila__item__titulo {
-                text-decoration: underline rgba(43, 47, 56, 0);
+                text-decoration: $no-hover-text;
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
+                    text-decoration-color: $hover-text;
                     transition: 0.2s;
                 }
             }
 
             .otros-articulos__primera-fila__item__autor {
-                text-decoration: underline rgba(43, 47, 56, 0);
+                text-decoration: $no-hover-text;
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
+                    text-decoration-color: $hover-text;
                     transition: 0.2s;
                 }
             }
@@ -63,19 +63,19 @@
             }
 
             .otros-articulos__resto__item__titulo {
-                text-decoration: underline rgba(43, 47, 56, 0);
+                text-decoration: $no-hover-text;
 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
+                    text-decoration-color: $hover-text;
                     transition: 0.2s;
                 }
             }
 
             .otros-articulos__resto__item__autor {
-                text-decoration: underline rgba(43, 47, 56, 0);
+                text-decoration: $no-hover-text;
                 
                 &:hover {
-                    text-decoration-color: rgba(43, 47, 56, 1);
+                    text-decoration-color: $hover-text;
                     transition: 0.2s;
                 }
             }
