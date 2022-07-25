@@ -5,7 +5,7 @@
         display: flex;
 
         .noticia-principal__imagen img {
-            max-width: 500px;
+            max-width: 100%;
 
             &:hover {
                 transform: scale(1.02);
@@ -60,7 +60,7 @@
             }
         }
 
-        @media (max-width: 950px) {
+        @media (max-width: 1000px) {
             @include flexbox(flex, column);
             flex-wrap: wrap;
             justify-content: center;
