@@ -1,82 +1,41 @@
 .otros-articulos {
     font-family: $main-font;
 
-    .otros-articulos__primera-fila {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 50px;
-        text-align: center;
-        margin: 100px 0;
-
-        .otros-articulos__primera-fila__item {
-
-            .otros-articulos__primera-fila__item__imagen {
-                height: 200px;
-
-                &:hover {
-                    transform: scale(1.02);
-                    transition: 0.2s;
-                }
-            }
-
-            .otros-articulos__primera-fila__item__titulo {
-                text-decoration: $no-hover-text;
-
-                &:hover {
-                    @extend %hover-text;
-                    
-                }
-            }
-
-            .otros-articulos__primera-fila__item__autor {
-                text-decoration: $no-hover-text;
-
-                &:hover {
-                    @extend %hover-text;
-                    
-                }
-            }
-        }
-    }
-
-    .otros-articulos__resto {
-        margin: 45px 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 100px;
-        text-align: center;
+    .otros-articulos__contenido {
         margin: 50px 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        row-gap: 20px;
 
-        .otros-articulos__resto__item {
-            
-            .otros-articulos__resto__item__imagen {
-                height: 175px;
+        .otros-articulos__contenido__item {
+            .otros-articulos__imagen {
+                max-height: 250px;
 
                 &:hover {
                     transform: scale(1.02);
                     transition: 0.2s;
                 }
-            }
 
-            .otros-articulos__resto__item__titulo {
-                text-decoration: $no-hover-text;
-
-                &:hover {
-                    @extend %hover-text;
-                    
+                @media (max-width: 950px) {
+                    max-width: 100%;
                 }
             }
-
-            .otros-articulos__resto__item__autor {
+            
+            & h3 {
                 text-decoration: $no-hover-text;
                 
                 &:hover {
                     @extend %hover-text;
-                    
+                }
+            }
+
+            & p {
+                text-decoration: $no-hover-text;
+                
+                &:hover {
+                    @extend %hover-text;
                 }
             }
         }

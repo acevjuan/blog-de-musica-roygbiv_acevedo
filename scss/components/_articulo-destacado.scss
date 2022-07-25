@@ -1,54 +1,71 @@
 .articulo-destacado {
     font-family: $main-font;
-    @include flexbox(flex, row);
-    justify-content: center;
-    margin: 45px 0;
 
-    .articulo-destacado__contenido {
+    .articulo-destacado-box {
         display: flex;
 
-        .articulo-destacado__contenido__imagen {
+        .articulo-destacado__imagen img {
+            max-width: 500px;
 
-            img {
-                height: 250px;
+            &:hover {
+                transform: scale(1.02);
+                transition: 0.2s;
+            }
 
-                &:hover {
-                    transform: scale(1.02);
-                    transition: 0.2s;
-                }
+            @media (max-width: 950px) {
+                max-width: 100%;
             }
         }
 
-        .articulo-destacado__contenido__texto {
+        .articulo-destacado__texto {
             @include flexbox(flex, column);
-            justify-content: space-evenly;
-            margin: 0 25px;
-            
-            .articulo-destacado__contenido__texto__titulo {
-                font-size: xx-large;
-                text-decoration: $no-hover-text;           
-                
-                &:hover {
-                    @extend %hover-text;
-                }
-          }
-          
-            .articulo-destacado__contenido__texto__autor {
-                text-decoration: $no-hover-text;                
-                
-                &:hover {
-                    @extend %hover-text;               
-                }
+            justify-content: center;
+
+            & p {
+                font-size: large;
             }
-          
-            .articulo-destacado__contenido__texto__descripcion {
-                font-size: x-large;
+
+            @media (max-width: 950px) {
+                @include flexbox(flex, column);
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .articulo-destacado__titulo {
+                font-size: xx-large;
+                margin: 20px;
                 text-decoration: $no-hover-text;
 
                 &:hover {
                     @extend %hover-text;
                 }
-            }  
+
+                @media (max-width: 950px) {
+                    margin: 0;
+                }
+            }
+
+            .articulo-destacado__descripcion {
+                font-size: large;
+                margin: 20px;
+                text-decoration: $no-hover-text;
+
+                &:hover {
+                    @extend %hover-text;
+                }
+
+                @media (max-width: 950px) {
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width: 950px) {
+            @include flexbox(flex, column);
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
         }
     }
 }

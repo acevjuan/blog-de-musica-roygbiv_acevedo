@@ -63,55 +63,66 @@
         </nav>
     </header>
     
-    <!-- Sección de noticias destacadas -->
-    <section class="destacadas container-fluid">
-
-        <div class="row">
-            <h2 class="destacadas__titulo">DESTACADAS</h2>
-        </div>
-        
-        <div class="destacadas__contenido">
-
-            <!-- Noticia principal destacada -->
-            <div class="destacadas__contenido__principal">
-                
-                <div class="destacadas__contenido__principal__imagen">
-                    <img class="destacadas__contenido__principal__img" src="multimedia/Smile-Thom-Yorke-Jonny-Greenwood.webp" alt="the smile american tour">
+    <!-- Noticias destacadas -->
+    <section class="destacadas container-fluid w-100">
+        <!-- Fila de contenido principal + noticias destacadas -->
+        <div class="row mb-5">
+            <!-- Contenido principal -->
+            <div class="noticia-principal-container col-lg-8 col-md-12 col-sm-12">
+                <div class="container-fluid g-0">
+                    <div class="row">
+                        <div class="noticia-principal__imagen col-lg-5 col-md-12">
+                            <img src="multimedia/Smile-Thom-Yorke-Jonny-Greenwood.webp" alt="the smile american tour">
+                        </div>
+                        <div class="noticia-principal__texto col-lg-7 col-md-12">
+                            <h3 class="noticia-principal__titulo">The Smile, proyecto de Thom Yorke y Jonny Greenwood, anuncia gira por Norteamerica</h3>
+                            <p class="noticia-principal__descripcion">Con esta gira iniciará la primera serie de presentaciones en vivo desde que formó este proyecto.</p>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="destacadas__contenido__principal__texto">
-                    <h3 class="destacadas__contenido__principal__texto__titulo">The Smile, proyecto de Thom Yorke y Jonny Greenwood, anuncia gira por Norteamerica</h3>
-                    <p class="destacadas__contenido__principal__texto__autor">Autor del artículo</p>
-                    <p class="destacadas__contenido__principal__texto__resumen">Con esta gira iniciará la primera serie de presentaciones en vivo desde que formó este proyecto.</p>
-                </div>
-            </div>   
-                    
-            <!-- Otras noticias destacadas -->
-            <div class="destacadas__contenido__otras">
+            </div>
 
-                <div class="destacadas__contenido__otras__item">
-                    <img class="destacadas__contenido__otras__item__imagen" src="multimedia/drake.webp  " alt="drake nuevo sencillo honestly nevermind">
-                    <h3 class="destacadas__contenido__otras__item__titulo">Drake lanza de forma inesperada su nuevo album "Honestly, Nevermind"</h3>
+            <!-- Noticias destacada -->
+            <div class="noticias-destacadas col-lg-4 col-md-12 col-sm-12">
+                <h2>Noticias destacadas</h2>
+                <div class="noticia-destacada__item">
+                    <div class="noticia-destacada__item__imagen">
+                    </div>
+                    <div class="noticia-destacada__item__titulo">
+                        <h3 class="noticia-destacada__titulo">Drake lanza de forma inesperada su nuevo album "Honestly, Nevermind"</h3>
+                    </div>
                 </div>
-
-                <div class="destacadas__contenido__otras__item">
-                    <img class="destacadas__contenido__otras__item__imagen" src="multimedia/gorillaz-2021@2000x1270-1-696x442.jpg" alt="gorillaz nuevo sencillo cracker island">
-                    <h3 class="destacadas__contenido__otras__item__titulo">Gorillaz anuncia nuevo sencillo "Cracker Island"</h3>
+                <div class="noticia-destacada__item">
+                    <div class="noticia-destacada__item__imagen">
+                    </div>
+                    <div class="noticia-destacada__item__titulo">
+                        <h3 class="noticia-destacada__titulo">Gorillaz anuncia nuevo sencillo "Cracker Island"</h3>
+                    </div>
                 </div>
-
-                <div class="destacadas__contenido__otras__item">
-                    <img class="destacadas__contenido__otras__item__imagen" src="multimedia/phoebe-bridgers-coachella-2022-696x442.jpg" alt="phoebe bridgers en vivo fallon">
-                    <h3 class="destacadas__contenido__otras__item__titulo">Phoebe Bridgers se brillante presentación en Fallon</h3>
-                </div>
-
-                <div class="destacadas__contenido__otras__item">
-                    <img class="destacadas__contenido__otras__item__imagen" src="multimedia/mars-volta-cube-1655737727.jpeg" alt="regreso the mars volta">
-                    <h3 class="destacadas__contenido__otras__item__titulo">The Mars Volta inicia campaña para promocionar su regreso</h3>      
+                <div class="noticia-destacada__item">
+                    <div class="noticia-destacada__item__imagen">
+                    </div>
+                    <div class="noticia-destacada__item__titulo">
+                        <h3 class="noticia-destacada__titulo">Flying Lotus comparte nuevos temas "The Room" y "You Don't Know"</h3>
+                    </div>
+                </div>    
+                <div class="noticia-destacada__item">
+                    <div class="noticia-destacada__item__imagen">
+                    </div>
+                    <div class="noticia-destacada__item__titulo">
+                        <h3 class="noticia-destacada__titulo">black midi comparte nuevo sencillo “Eat Men Eat”</h3>
+                    </div>
+                </div>    
+                <div class="noticia-destacada__item">
+                    <div class="noticia-destacada__item__imagen">
+                    </div>
+                    <div class="noticia-destacada__item__titulo">
+                        <h3 class="noticia-destacada__titulo">Phoebe Bridgers se brillante presentación en Fallon</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
+
     </section>
 
     <!-- Sección de noticias recientes -->
@@ -119,68 +130,69 @@
 
         <h2 class="recientes__titulo">RECIENTES</h2>
 
-        <div class="recientes__contenido">
+        <div class="recientes__contenido container-fluid">
 
-            <div class="recientes__contenido__item">
 
-                <div class="recientes__contenido__item__imagen">
-                    <img src="multimedia/kid-cudi-kanye-west-rolling-loud-1658086546-1000x666.jpg" alt="Imagen de noticia # 1">
+                <div class="recientes__contenido__item">
+
+                    <div class="recientes__contenido__item__imagen">
+                        <img src="multimedia/Kanye-West-Kid-Cudi.webp" alt="Imagen de noticia # 1">
+                    </div>
+    
+                    <div class="recientes__contenido__item__texto">
+                        <h3 class="recientes__contenido__item__texto__titulo">Kid Cudi reemplaza a Kanye West en Rolling Loud</h3>
+                        <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
+                        <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
+                        <p class="recientes__contenido__item__texto__resumen">Kanye confirmó que no formará parte del festival como artista principal, confirmaron los organizadores del evento.</p>
+                    </div>
+    
                 </div>
-
-                <div class="recientes__contenido__item__texto">
-                    <h3 class="recientes__contenido__item__texto__titulo">Kid Cudi reemplaza a Kanye West en Rolling Loud</h3>
-                    <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
-                    <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
-                    <p class="recientes__contenido__item__texto__resumen">Kanye confirmó que no formará parte del festival como artista principal, confirmaron los organizadores del evento.</p>
+    
+                <div class="recientes__contenido__item">
+    
+                    <div class="recientes__contenido__item__imagen">
+                        <img src="multimedia/The-Weeknd-in-Idol.webp" alt="Imagen de noticia # 1">
+                    </div>
+    
+                    <div class="recientes__contenido__item__texto">
+                        <h3 class="recientes__contenido__item__texto__titulo">HBO lanza trailer de la serie the The Weeknd 'The Idol'</h3>
+                        <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
+                        <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
+                        <p class="recientes__contenido__item__texto__resumen">La serie co-creada por Sam Levinson (Euphoria) y The Weeknd se estrenará a finales de este año y narrará una historia original.</p>
+                    </div>
+    
                 </div>
-
-            </div>
-
-            <div class="recientes__contenido__item">
-
-                <div class="recientes__contenido__item__imagen">
-                    <img src="multimedia/the-idol-teaser-trailer-1658072538-1000x485.jpeg" alt="Imagen de noticia # 1">
+    
+                <div class="recientes__contenido__item">
+    
+                    <div class="recientes__contenido__item__imagen">
+                        <img src="multimedia/Paramore.webp" alt="Imagen de noticia # 1">
+                    </div>
+    
+                    <div class="recientes__contenido__item__texto">
+                        <h3>Paramore anuncia tour para este otoño</h3>
+                        <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
+                        <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
+                        <p class="recientes__contenido__item__texto__resumen">La banda realizará sus primeras presentaciones después de 4 años</p>
+                    </div>
+    
                 </div>
-
-                <div class="recientes__contenido__item__texto">
-                    <h3 class="recientes__contenido__item__texto__titulo">HBO lanza trailer de la serie the The Weeknd 'The Idol'</h3>
-                    <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
-                    <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
-                    <p class="recientes__contenido__item__texto__resumen">La serie co-creada por Sam Levinson (Euphoria) y The Weeknd se estrenará a finales de este año y narrará una historia original.</p>
-                </div>
-
-            </div>
-
-            <div class="recientes__contenido__item">
-
-                <div class="recientes__contenido__item__imagen">
-                    <img src="multimedia/unnamed-44-1657911877-1000x908.jpg" alt="Imagen de noticia # 1">
-                </div>
-
-                <div class="recientes__contenido__item__texto">
-                    <h3>Paramore anuncia tour para este otoño</h3>
-                    <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
-                    <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
-                    <p class="recientes__contenido__item__texto__resumen">La banda realizará sus primeras presentaciones después de 4 años</p>
-                </div>
-
-            </div>
-
-            <div class="recientes__contenido__item">
-
-                <div class="recientes__contenido__item__imagen">
-                    <img src="multimedia/Beastie-Boys.webp" alt="Imagen de noticia # 1">
-                </div>
-
-                <div class="recientes__contenido__item__texto">
-                    <h3 class="recientes__contenido__item__texto__titulo">Aprueban monumento de Beastie Boys en NYC</h3>
-                    <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
-                    <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
-                    <p class="recientes__contenido__item__texto__resumen">De igual manera, la esquina que aparece en la portada de su clásico Paul's Botique será renombrado.</p>
-                </div>
-
-            </div>
-
+    
+                <div class="recientes__contenido__item">
+    
+                    <div class="recientes__contenido__item__imagen">
+                        <img src="multimedia/Beastie-Boys.webp" alt="Imagen de noticia # 1">
+                    </div>
+    
+                    <div class="recientes__contenido__item__texto">
+                        <h3 class="recientes__contenido__item__texto__titulo">Aprueban monumento de Beastie Boys en NYC</h3>
+                        <p class="recientes__contenido__item__texto__autor">Autor del artículo</p>
+                        <!-- Introducción de la noticia. Al igual que en el wireframe, se utiliza un 'lorem' para simular el estilo final lo mejor posible -->
+                        <p class="recientes__contenido__item__texto__resumen">De igual manera, la esquina que aparece en la portada de su clásico Paul's Botique será renombrado.</p>
+                    </div>
+    
+                </div>                
+                
         </div>
 
     </section>

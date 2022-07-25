@@ -22,7 +22,7 @@
             .recientes__contenido__item__imagen {
 
                 img {
-                    height: 100px;
+                    height: 150px;
 
                     &:hover {
                         transform: scale(1.02);
@@ -66,6 +66,15 @@
                     }
                 }
             }
+
+            @media (max-width: 950px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+
         }
     }
 }
